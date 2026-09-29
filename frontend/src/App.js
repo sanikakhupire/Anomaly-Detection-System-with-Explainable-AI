@@ -10,6 +10,7 @@ import AppLayout from './layouts/AppLayout';
 import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
 import DatasetsPage from './pages/DatasetsPage';
+import DatasetDetailPage from './pages/DatasetDetailPage';
 import AnomaliesPage from './pages/AnomaliesPage';
 import ReviewsPage from './pages/ReviewsPage';
 import ModelsPage from './pages/ModelsPage';
@@ -39,6 +40,7 @@ function App() {
                 <Route index element={<Navigate to="/dashboard" replace />} />
                 <Route path="dashboard" element={<DashboardPage />} />
                 <Route path="datasets" element={<DatasetsPage />} />
+                <Route path="datasets/:id" element={<DatasetDetailPage />} />
                 <Route path="anomalies" element={<AnomaliesPage />} />
                 <Route path="reviews" element={<ReviewsPage />} />
                 <Route path="models" element={<ModelsPage />} />

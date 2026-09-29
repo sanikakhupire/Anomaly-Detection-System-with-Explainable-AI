@@ -36,3 +36,8 @@ def health_check():
         "service": "ml-service",
         "version": "1.0.0"
     }
+
+
+from app.api.profile import router as profile_router
+app.include_router(profile_router)
+

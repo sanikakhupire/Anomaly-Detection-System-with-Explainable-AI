@@ -6,6 +6,8 @@ const rateLimit = require('express-rate-limit');
 const errorHandler = require('./middleware/error.middleware');
 const { sendSuccess, sendError } = require('./utils/response');
 const authRoutes = require('./routes/auth.routes');
+const datasetRoutes = require('./routes/dataset.routes');
+const jobRoutes = require('./routes/job.routes');
 
 const app = express();
 
@@ -79,6 +81,8 @@ app.get('/api/health', (req, res) => {
 
 // Mount Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/datasets', datasetRoutes);
+app.use('/api/jobs', jobRoutes);
 
 // 404 Handler for undefined routes
 app.use((req, res) => {
