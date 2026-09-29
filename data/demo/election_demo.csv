@@ -1,0 +1,1001 @@
+state,parliamentary_constituency,assembly_constituency,polling_station_id,election_year,total_electors,votes_polled,valid_votes,rejected_votes,winning_candidate_votes,runner_up_votes,winner_party
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_001,2014,752,536,527,9,284,142,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_001,2019,752,468,459,9,223,123,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_001,2024,752,460,457,3,257,170,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_002,2014,841,621,619,2,297,196,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_002,2019,841,515,504,11,216,189,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_002,2024,841,562,558,4,277,210,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_003,2014,780,562,554,8,251,143,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_003,2019,780,936,568,3,282,143,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_003,2024,780,545,537,8,291,192,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_004,2014,855,565,562,3,310,163,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_004,2019,855,544,539,5,246,202,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_004,2024,855,571,560,11,335,183,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_005,2014,920,571,563,8,295,211,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_005,2019,920,607,604,3,318,197,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_005,2024,920,594,584,10,279,158,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_006,2014,1170,831,822,9,346,292,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_006,2019,1170,821,817,4,469,212,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_006,2024,1170,812,804,8,474,247,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_007,2014,697,458,449,9,248,146,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_007,2019,697,505,503,2,249,189,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_007,2024,697,494,483,11,225,136,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_008,2014,1042,731,720,11,306,190,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_008,2019,1042,3024,754,2,364,238,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_008,2024,1042,654,646,8,324,224,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_009,2014,1174,727,723,4,326,268,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_009,2019,1174,761,755,6,448,267,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_009,2024,1174,779,768,11,341,227,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_010,2014,874,564,554,10,323,200,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_010,2019,874,551,541,10,279,183,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_010,2024,874,571,564,7,261,181,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_011,2014,762,471,460,11,281,130,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_011,2019,762,535,529,6,252,134,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_011,2024,762,561,554,7,236,163,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_012,2014,1052,2936,728,6,377,275,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_012,2019,1052,722,714,8,408,200,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_012,2024,1052,751,745,6,407,247,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_013,2014,1160,721,719,2,323,227,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_013,2019,1160,713,708,5,343,197,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_013,2024,1160,784,780,4,381,204,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_014,2014,1289,873,864,9,386,254,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_014,2019,1289,821,810,11,381,271,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_1,Varanasi_AC_1_PS_014,2024,1289,950,945,5,497,265,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_001,2014,903,656,650,6,387,178,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_001,2019,903,591,587,4,347,177,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_001,2024,903,626,624,2,282,228,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_002,2014,903,551,541,10,299,135,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_002,2019,903,586,583,3,325,195,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_002,2024,903,571,566,5,264,165,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_003,2014,1153,800,792,8,446,229,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_003,2019,1153,717,713,4,390,201,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_003,2024,1153,849,845,4,505,280,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_004,2014,926,625,623,2,285,214,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_004,2019,926,633,631,2,270,239,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_004,2024,926,679,673,6,401,233,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_005,2014,929,606,600,6,320,226,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_005,2019,929,602,596,6,273,169,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_005,2024,929,587,577,10,287,207,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_006,2014,1335,831,824,7,405,233,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_006,2019,1335,966,964,2,568,258,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_006,2024,1335,876,865,11,503,307,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_007,2014,1057,770,759,11,319,251,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_007,2019,1057,734,730,4,355,218,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_007,2024,1057,705,698,7,338,188,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_008,2014,774,556,545,11,232,138,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_008,2019,774,502,496,6,260,173,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_008,2024,774,569,561,8,245,144,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_009,2014,999,679,671,8,300,179,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_009,2019,999,676,672,4,389,191,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_009,2024,999,706,695,11,295,260,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_010,2014,776,543,537,6,231,198,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_010,2019,776,498,491,7,276,164,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_010,2024,776,537,529,8,291,162,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_011,2014,896,552,541,11,265,188,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_011,2019,896,586,580,6,254,168,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_011,2024,896,628,617,11,353,218,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_012,2014,938,628,622,6,310,205,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_012,2019,938,680,675,5,334,223,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_012,2024,938,633,624,9,344,169,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_013,2014,985,683,681,2,404,226,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_013,2019,985,674,671,3,358,178,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_013,2024,985,670,664,6,362,236,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_014,2014,692,439,436,3,186,144,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_014,2019,692,428,419,9,208,141,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_2,Varanasi_AC_2_PS_014,2024,692,495,485,10,251,164,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_001,2014,1142,835,826,9,468,292,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_001,2019,1142,777,771,6,439,273,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_001,2024,1142,805,800,5,395,280,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_002,2014,1312,959,953,6,445,322,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_002,2019,1312,929,919,10,455,293,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_002,2024,1312,941,934,7,447,245,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_003,2014,1045,767,763,4,334,222,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_003,2019,1045,729,724,5,387,240,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_003,2024,1045,649,639,10,339,177,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_004,2014,800,569,561,8,245,176,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_004,2019,800,591,580,11,294,211,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_004,2024,800,561,551,10,315,182,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_005,2014,879,545,536,9,232,191,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_005,2019,879,552,546,6,254,177,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_005,2024,879,578,573,5,267,210,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_006,2014,781,511,507,4,291,163,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_006,2019,781,501,497,4,219,156,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_006,2024,781,517,506,11,287,176,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_007,2014,1010,713,709,4,380,265,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_007,2019,1010,628,668,10,396,186,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_007,2024,1010,721,715,6,306,264,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_008,2014,878,2256,560,4,343,178,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_008,2019,878,560,558,2,304,181,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_008,2024,878,619,608,11,370,222,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_009,2014,1057,729,720,9,326,240,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_009,2019,1057,693,690,3,326,204,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_009,2024,1057,780,773,7,329,221,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_010,2014,1373,945,941,4,550,351,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_010,2019,1373,1647,931,10,468,345,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_010,2024,1373,935,929,6,395,277,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_011,2014,795,586,584,2,289,202,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_011,2019,795,585,583,2,342,181,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_011,2024,795,498,492,6,212,178,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_012,2014,1358,1004,997,7,600,325,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_012,2019,1358,995,984,11,487,276,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_012,2024,1358,851,847,4,402,234,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_013,2014,1137,784,775,9,328,243,Party_Beta
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_013,2019,1137,807,804,3,474,258,Party_Alpha
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_013,2024,1137,706,696,10,374,217,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_014,2014,856,609,606,3,596,222,Party_Delta
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_014,2019,856,523,516,7,279,171,Party_Gamma
+Uttar Pradesh,Varanasi,Varanasi_AC_3,Varanasi_AC_3_PS_014,2024,856,570,567,3,277,179,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_001,2014,984,650,642,8,336,218,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_001,2019,984,619,610,9,358,213,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_001,2024,984,658,655,3,356,193,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_002,2014,1396,956,952,4,502,294,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_002,2019,1396,3516,872,7,487,238,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_002,2024,1396,914,910,4,541,288,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_003,2014,710,450,446,4,260,131,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_003,2019,710,449,443,6,234,141,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_003,2024,710,452,449,3,200,131,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_004,2014,722,449,439,10,244,138,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_004,2019,722,2104,524,2,249,185,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_004,2024,722,496,491,5,226,146,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_005,2014,1175,811,803,8,400,275,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_005,2019,1175,722,713,9,318,241,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_005,2024,1175,794,791,3,403,252,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_006,2014,841,542,536,6,527,173,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_006,2019,841,536,525,11,276,147,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_006,2024,841,577,572,5,280,191,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_007,2014,760,521,514,7,276,178,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_007,2019,760,519,508,11,242,150,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_007,2024,760,523,514,9,267,150,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_008,2014,938,573,567,6,255,159,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_008,2019,938,675,666,9,399,173,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_008,2024,938,574,568,6,350,150,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_009,2014,1117,822,817,5,344,307,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_009,2019,1117,706,702,4,410,241,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_009,2024,1117,764,760,4,446,210,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_010,2014,767,538,533,5,277,150,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_010,2019,767,538,531,7,284,143,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_010,2024,767,499,495,4,213,145,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_011,2014,910,562,559,3,270,198,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_011,2019,910,571,561,10,320,183,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_011,2024,910,626,622,4,304,230,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_012,2014,885,586,580,6,300,215,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_012,2019,885,583,581,2,330,188,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_012,2024,885,629,619,10,352,219,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_013,2014,1374,871,867,4,479,275,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_013,2019,1374,894,883,11,440,314,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_013,2024,1374,965,961,4,523,307,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_014,2014,792,542,540,2,323,161,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_014,2019,792,489,480,9,261,127,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_1,Lucknow_AC_1_PS_014,2024,792,517,513,4,249,137,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_001,2014,1272,878,873,5,496,283,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_001,2019,1272,801,799,2,448,280,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_001,2024,1272,781,774,7,435,243,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_002,2014,767,549,544,5,278,178,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_002,2019,767,547,541,6,279,164,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_002,2024,767,539,535,4,298,171,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_003,2014,932,610,599,11,292,167,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_003,2019,932,624,613,11,329,193,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_003,2024,932,599,590,9,350,218,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_004,2014,973,693,687,6,385,185,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_004,2019,973,640,630,10,318,217,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_004,2024,973,699,691,8,307,193,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_005,2014,1271,806,798,8,482,289,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_005,2019,1271,812,806,6,399,279,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_005,2024,1271,907,901,6,487,238,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_006,2014,1186,856,849,7,415,250,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_006,2019,1186,865,861,4,404,279,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_006,2024,1186,788,779,9,375,273,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_007,2014,1311,837,834,3,460,227,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_007,2019,1311,877,872,5,438,227,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_007,2024,1311,831,823,8,443,212,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_008,2014,1084,690,686,4,336,213,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_008,2019,1084,666,657,9,353,189,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_008,2024,1084,725,722,3,380,225,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_009,2014,1327,941,936,5,427,338,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_009,2019,1327,939,928,11,440,309,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_009,2024,1327,947,939,8,423,322,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_010,2014,657,403,395,8,185,108,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_010,2019,657,402,395,7,192,127,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_010,2024,657,456,447,9,196,125,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_011,2014,937,675,670,5,407,179,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_011,2019,937,607,604,3,255,157,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_011,2024,937,674,670,4,359,204,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_012,2014,1358,888,877,11,513,260,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_012,2019,1358,875,869,6,424,304,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_012,2024,1358,905,901,4,549,314,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_013,2014,1242,897,888,9,547,276,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_013,2019,1242,826,822,4,429,284,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_013,2024,1242,859,851,8,394,284,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_014,2014,653,409,406,3,192,102,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_014,2019,653,443,432,11,231,123,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_2,Lucknow_AC_2_PS_014,2024,653,432,425,7,249,117,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_001,2014,991,622,612,10,289,211,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_001,2019,991,681,671,10,348,217,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_001,2024,991,658,647,11,326,191,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_002,2014,1012,641,635,6,343,179,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_002,2019,1012,727,722,5,407,208,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_002,2024,1012,742,734,8,405,272,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_003,2014,961,613,608,5,321,164,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_003,2019,961,592,589,3,320,183,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_003,2024,961,595,593,2,298,202,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_004,2014,691,462,458,4,267,162,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_004,2019,691,508,501,7,269,148,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_004,2024,691,494,492,2,220,183,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_005,2014,1146,726,717,9,409,238,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_005,2019,1146,797,790,7,432,298,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_005,2024,1146,771,760,11,327,256,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_006,2014,665,485,477,8,253,148,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_006,2019,665,408,402,6,227,110,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_006,2024,665,489,481,8,978,166,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_007,2014,1051,712,704,8,300,230,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_007,2019,1051,717,714,3,426,227,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_007,2024,1051,740,732,8,353,234,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_008,2014,1046,723,712,11,423,216,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_008,2019,1046,756,748,8,341,224,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_008,2024,1046,746,738,8,311,189,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_009,2014,1126,692,682,10,365,194,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_009,2019,1126,799,789,10,384,250,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_009,2024,1126,721,717,4,368,206,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_010,2014,973,684,678,6,290,171,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_010,2019,973,599,597,2,297,158,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_010,2024,973,713,707,6,309,215,Party_Delta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_011,2014,968,709,706,3,320,267,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_011,2019,968,641,634,7,343,200,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_011,2024,968,596,586,10,271,160,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_012,2014,1166,720,712,8,424,263,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_012,2019,1166,790,779,11,407,244,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_012,2024,1166,734,730,4,339,203,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_013,2014,738,507,501,6,219,182,Party_Gamma
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_013,2019,738,476,466,10,199,168,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_013,2024,738,527,518,9,314,179,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_014,2014,773,508,499,9,279,127,Party_Beta
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_014,2019,773,479,473,6,292,122,Party_Alpha
+Uttar Pradesh,Lucknow,Lucknow_AC_3,Lucknow_AC_3_PS_014,2024,773,519,515,4,301,152,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_001,2014,689,846,468,2,278,165,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_001,2019,689,846,432,10,210,121,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_001,2024,689,846,474,7,217,172,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_002,2014,680,846,476,11,277,133,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_002,2019,680,429,424,5,225,147,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_002,2024,680,415,413,2,219,109,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_003,2014,1349,824,820,4,365,235,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_003,2019,1349,917,914,3,446,303,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_003,2024,1349,955,948,7,575,321,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_004,2014,973,631,629,2,361,215,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_004,2019,973,637,626,11,200,225,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_004,2024,973,716,711,5,390,232,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_005,2014,656,405,403,2,195,126,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_005,2019,656,421,413,8,210,117,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_005,2024,656,480,476,4,242,129,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_006,2014,806,522,519,3,298,145,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_006,2019,806,520,518,2,317,131,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_006,2024,806,590,584,6,319,176,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_007,2014,1102,813,811,2,392,279,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_007,2019,1102,702,700,2,985,208,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_007,2024,1102,739,730,9,329,201,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_008,2014,958,603,600,3,343,198,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_008,2019,958,621,612,9,369,202,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_008,2024,958,641,633,8,281,214,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_009,2014,1170,744,734,10,331,245,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_009,2019,1170,754,745,9,377,281,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_009,2024,1170,715,712,3,395,214,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_010,2014,1256,884,874,10,517,307,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_010,2019,1256,884,880,4,388,247,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_010,2024,1256,859,852,7,463,290,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_011,2014,891,581,578,3,304,210,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_011,2019,891,547,542,5,266,158,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_011,2024,891,609,598,11,346,165,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_012,2014,1077,671,667,4,399,218,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_012,2019,1077,664,654,10,367,237,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_012,2024,1077,744,739,5,360,263,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_013,2014,1108,804,799,5,431,281,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_013,2019,1108,768,758,10,343,232,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_013,2024,1108,684,676,8,371,211,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_014,2014,771,765,498,5,283,180,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_014,2019,771,536,532,4,240,134,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_1,Gorakhpur_AC_1_PS_014,2024,771,493,484,9,297,161,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_001,2014,684,436,429,7,182,121,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_001,2019,684,432,426,6,240,147,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_001,2024,684,473,468,5,243,150,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_002,2014,1257,862,851,11,480,266,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_002,2019,1257,864,859,5,433,245,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_002,2024,1257,813,809,4,440,268,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_003,2014,1386,869,860,9,430,282,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_003,2019,1386,888,885,3,403,319,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_003,2024,1386,924,917,7,544,282,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_004,2014,880,577,574,3,200,192,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_004,2019,880,647,644,3,634,161,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_004,2024,880,625,616,9,307,172,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_005,2014,1044,756,749,7,340,237,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_005,2019,1044,727,717,10,362,202,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_005,2024,1044,765,755,10,342,205,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_006,2014,756,533,527,6,277,185,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_006,2019,756,540,533,7,245,141,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_006,2024,756,558,548,10,288,203,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_007,2014,650,406,399,7,181,104,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_007,2019,650,439,428,11,213,133,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_007,2024,650,396,393,3,190,147,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_008,2014,872,560,557,3,272,177,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_008,2019,872,535,530,5,297,146,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_008,2024,872,550,544,6,238,183,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_009,2014,1007,727,720,7,339,241,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_009,2019,1007,737,726,11,307,204,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_009,2024,1007,728,719,9,412,190,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_010,2014,650,414,408,6,225,132,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_010,2019,650,452,449,3,242,130,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_010,2024,650,430,420,10,184,120,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_011,2014,973,675,668,7,324,224,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_011,2019,973,707,697,10,336,252,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_011,2024,973,608,601,7,330,175,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_012,2014,725,499,493,6,244,158,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_012,2019,725,464,462,2,235,116,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_012,2024,725,499,488,11,279,153,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_013,2014,977,661,654,7,394,232,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_013,2019,977,644,641,3,336,180,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_013,2024,977,673,665,8,387,228,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_014,2014,1076,658,650,8,329,238,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_014,2019,1076,781,771,10,424,230,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_2,Gorakhpur_AC_2_PS_014,2024,1076,787,780,7,357,211,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_001,2014,1022,661,657,4,352,171,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_001,2019,1022,718,716,2,440,255,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_001,2024,1022,647,636,11,368,174,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_002,2014,961,685,674,11,406,205,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_002,2019,961,686,684,2,338,217,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_002,2024,961,705,697,8,381,220,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_003,2014,675,430,419,11,190,124,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_003,2019,675,490,488,2,228,171,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_003,2024,675,475,470,5,237,158,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_004,2014,1325,834,826,8,443,224,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_004,2019,1325,957,955,2,442,250,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_004,2024,1325,862,858,4,464,275,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_005,2014,1239,857,847,10,439,320,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_005,2019,1239,851,848,3,424,259,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_005,2024,1239,872,864,8,421,307,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_006,2014,867,566,558,8,320,158,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_006,2019,867,629,625,4,312,186,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_006,2024,867,568,563,5,286,201,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_007,2014,1166,721,715,6,339,233,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_007,2019,1166,792,781,11,380,263,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_007,2024,1166,768,761,7,404,262,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_008,2014,765,472,461,11,281,125,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_008,2019,765,541,533,8,280,139,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_008,2024,765,548,546,2,537,206,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_009,2014,1305,3440,852,8,425,229,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_009,2019,1305,921,912,9,481,327,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_009,2024,1305,811,804,7,352,279,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_010,2014,1109,789,786,3,340,208,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_010,2019,1109,714,711,3,352,209,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_010,2024,1109,756,752,4,375,231,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_011,2014,1115,754,750,4,432,243,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_011,2019,1115,803,792,11,412,238,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_011,2024,1115,798,794,4,440,253,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_012,2014,783,492,484,8,232,126,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_012,2019,783,479,476,3,221,178,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_012,2024,783,542,532,10,284,166,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_013,2014,813,560,558,2,302,194,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_013,2019,813,529,525,4,262,141,Party_Alpha
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_013,2024,813,615,502,6,213,134,Party_Delta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_014,2014,822,560,555,5,281,146,Party_Beta
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_014,2019,822,501,498,3,273,134,Party_Gamma
+Uttar Pradesh,Gorakhpur,Gorakhpur_AC_3,Gorakhpur_AC_3_PS_014,2024,822,561,558,3,285,143,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_001,2014,1339,1404,817,9,391,249,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_001,2019,1339,1404,831,10,479,236,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_001,2024,1339,1404,935,2,487,354,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_002,2014,750,1404,512,5,232,171,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_002,2019,750,499,493,6,294,152,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_002,2024,750,492,485,7,283,167,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_003,2014,1294,791,788,3,352,239,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_003,2019,1294,833,822,11,457,225,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_003,2024,1294,825,819,6,480,271,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_004,2014,987,610,605,5,299,172,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_004,2019,987,660,655,5,309,176,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_004,2024,987,621,616,5,288,206,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_005,2014,1394,961,954,7,475,357,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_005,2019,1394,1023,1021,2,563,380,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_005,2024,1394,929,927,2,545,236,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_006,2014,881,590,582,8,321,213,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_006,2019,881,563,561,2,243,178,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_006,2024,881,549,547,2,278,140,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_007,2014,1154,815,813,2,353,210,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_007,2019,1154,709,704,5,399,208,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_007,2024,1154,852,847,5,486,284,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_008,2014,1212,766,760,6,402,272,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_008,2019,1212,781,774,7,337,245,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_008,2024,1212,785,776,9,422,232,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_009,2014,1210,778,773,5,444,257,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_009,2019,1210,813,810,3,392,215,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_009,2024,1210,892,885,7,457,327,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_010,2014,937,646,643,3,286,189,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_010,2019,937,644,634,10,313,194,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_010,2024,937,651,615,3,374,172,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_011,2014,821,521,519,2,285,149,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_011,2019,821,534,526,8,309,194,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_011,2024,821,568,562,6,553,195,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_012,2014,1296,820,813,7,463,231,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_012,2019,1296,797,794,3,350,269,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_012,2024,1296,928,924,4,415,272,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_013,2014,1332,943,941,2,490,271,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_013,2019,1332,838,830,8,444,302,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_013,2024,1332,840,829,11,440,294,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_014,2014,910,659,654,5,287,197,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_014,2019,910,632,622,10,330,214,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_1,Kolkata North_AC_1_PS_014,2024,910,627,624,3,306,219,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_001,2014,1247,898,887,11,378,307,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_001,2019,1247,882,876,6,432,256,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_001,2024,1247,897,890,7,529,337,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_002,2014,1272,850,845,5,486,235,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_002,2019,1272,840,834,6,350,227,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_002,2024,1272,878,873,5,398,262,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_003,2014,768,555,551,4,238,179,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_003,2019,768,538,529,9,286,178,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_003,2024,768,528,524,4,272,136,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_004,2014,1313,857,846,11,833,298,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_004,2019,1313,889,884,5,392,305,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_004,2024,1313,816,811,5,350,287,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_005,2014,767,531,529,2,289,166,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_005,2019,767,479,472,7,291,163,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_005,2024,767,524,518,6,236,153,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_006,2014,1268,777,770,7,365,244,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_006,2019,1268,902,898,4,423,274,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_006,2024,1268,835,829,6,427,254,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_007,2014,910,638,627,11,273,216,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_007,2019,910,662,653,9,369,228,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_007,2024,910,581,571,10,325,191,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_008,2014,1374,850,839,11,399,238,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_008,2019,1374,1648,878,9,539,261,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_008,2024,1374,918,911,7,394,285,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_009,2014,1268,783,772,11,411,227,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_009,2019,1268,841,833,8,364,233,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_009,2024,1268,882,877,5,390,319,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_010,2014,1075,771,762,9,359,262,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_010,2019,1075,792,786,6,432,216,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_010,2024,1075,703,699,4,429,230,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_011,2014,1094,683,680,3,383,206,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_011,2019,1094,788,780,8,412,294,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_011,2024,1094,789,778,11,411,274,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_012,2014,1178,812,805,7,474,246,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_012,2019,1178,863,853,10,472,264,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_012,2024,1178,789,781,8,413,201,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_013,2014,943,1131,663,11,408,234,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_013,2019,943,599,591,8,351,189,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_013,2024,943,668,661,7,279,176,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_014,2014,1375,867,857,10,455,297,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_014,2019,1375,843,833,10,365,245,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_2,Kolkata North_AC_2_PS_014,2024,1375,935,930,5,539,277,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_001,2014,1250,827,823,4,418,226,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_001,2019,1250,847,838,9,411,292,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_001,2024,1250,865,857,8,470,236,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_002,2014,753,510,505,5,268,137,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_002,2019,753,543,539,4,323,146,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_002,2024,753,473,471,2,200,140,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_003,2014,1337,842,837,5,485,314,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_003,2019,1337,968,960,8,588,292,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_003,2024,1337,836,833,3,377,303,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_004,2014,1220,769,763,6,405,243,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_004,2019,1220,874,863,11,376,297,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_004,2024,1220,797,787,10,459,252,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_005,2014,1221,794,791,3,462,244,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_005,2019,1221,785,778,7,455,228,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_005,2024,1221,783,774,9,338,265,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_006,2014,1341,975,971,4,495,337,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_006,2019,1341,893,886,7,502,314,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_006,2024,1341,1609,984,4,419,340,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_007,2014,715,465,456,9,197,124,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_007,2019,715,497,495,2,290,141,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_007,2024,715,467,456,11,238,132,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_008,2014,1182,726,720,6,361,251,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_008,2019,1182,854,846,8,491,217,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_008,2024,1182,761,759,2,451,189,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_009,2014,1252,827,820,7,381,245,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_009,2019,1252,825,820,5,347,249,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_009,2024,1252,913,905,8,403,309,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_010,2014,1075,753,748,5,461,247,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_010,2019,1075,698,690,8,363,229,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_010,2024,1075,671,664,7,294,171,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_011,2014,935,575,573,2,294,165,Party_Gamma
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_011,2019,935,579,569,10,273,197,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_011,2024,935,578,569,9,338,166,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_012,2014,1281,812,804,8,423,288,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_012,2019,1281,787,783,4,370,276,Party_Alpha
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_012,2024,1281,868,862,6,405,240,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_013,2014,850,619,614,5,364,158,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_013,2019,850,581,573,8,289,166,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_013,2024,850,569,559,10,272,151,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_014,2014,881,645,638,7,343,217,Party_Delta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_014,2019,881,614,609,5,302,190,Party_Beta
+West Bengal,Kolkata North,Kolkata North_AC_3,Kolkata North_AC_3_PS_014,2024,881,567,558,9,301,193,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_001,2014,1233,853,846,7,506,211,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_001,2019,1233,827,816,11,490,229,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_001,2024,1233,907,905,2,492,281,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_002,2014,1398,938,936,2,489,234,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_002,2019,1398,861,852,9,364,224,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_002,2024,1398,936,930,6,497,294,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_003,2014,1031,666,657,9,287,216,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_003,2019,1031,700,692,8,370,175,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_003,2024,1031,723,719,4,366,266,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_004,2014,650,429,425,4,213,156,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_004,2019,650,418,416,2,243,155,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_004,2024,650,457,447,10,244,114,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_005,2014,1080,667,662,5,368,175,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_005,2019,1080,771,766,5,378,203,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_005,2024,1080,735,733,2,318,190,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_006,2014,690,505,495,10,271,180,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_006,2019,690,421,418,3,187,110,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_006,2024,690,499,494,5,270,171,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_007,2014,1327,952,943,9,550,320,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_007,2019,1327,860,858,2,374,259,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_007,2024,1327,830,828,2,383,257,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_008,2014,1154,714,708,6,395,216,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_008,2019,1154,715,705,10,339,248,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_008,2024,1154,737,733,4,373,238,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_009,2014,712,443,432,11,213,109,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_009,2019,712,498,490,8,255,133,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_009,2024,712,447,438,9,250,163,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_010,2014,1318,892,889,3,486,261,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_010,2019,1318,939,937,2,412,337,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_010,2024,1318,866,861,5,461,277,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_011,2014,1037,655,652,3,337,165,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_011,2019,1037,704,699,5,307,193,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_011,2024,1037,684,673,11,335,195,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_012,2014,894,578,572,6,335,170,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_012,2019,894,581,573,8,291,217,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_012,2024,894,659,654,5,278,246,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_013,2014,717,528,518,10,274,165,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_013,2019,717,460,452,8,229,130,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_013,2024,717,503,492,11,212,144,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_014,2014,1182,869,861,8,455,233,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_014,2019,1182,742,738,4,332,262,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_1,Diamond Harbour_AC_1_PS_014,2024,1182,782,780,2,442,225,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_001,2014,1313,906,900,6,509,242,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_001,2019,1313,882,877,5,527,234,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_001,2024,1313,956,949,7,499,344,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_002,2014,1044,711,705,6,408,201,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_002,2019,1044,641,634,7,285,196,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_002,2024,1044,649,644,5,381,210,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_003,2014,877,567,565,2,300,173,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_003,2019,877,593,583,10,287,200,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_003,2024,877,646,643,3,327,211,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_004,2014,1014,681,671,10,289,168,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_004,2019,1014,730,721,9,311,263,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_004,2024,1014,622,614,8,260,191,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_005,2014,1375,967,960,7,504,318,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_005,2019,1375,902,899,3,437,310,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_005,2024,1375,1009,1005,4,622,339,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_006,2014,1137,737,729,8,312,214,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_006,2019,1137,803,797,6,335,296,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_006,2024,1137,790,788,2,464,259,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_007,2014,1184,797,792,5,397,204,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_007,2019,1184,806,803,3,338,211,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_007,2024,1184,768,759,9,335,272,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_008,2014,1305,877,874,3,379,264,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_008,2019,1305,831,828,3,394,293,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_008,2024,1305,821,813,8,488,237,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_009,2014,970,660,654,6,279,181,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_009,2019,970,673,666,7,304,228,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_009,2024,970,648,637,11,372,205,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_010,2014,809,548,545,3,306,194,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_010,2019,809,523,518,5,232,181,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_010,2024,809,796,532,3,237,176,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_011,2014,1365,904,894,10,375,282,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_011,2019,1365,959,952,7,534,245,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_011,2024,1365,915,908,7,426,314,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_012,2014,1317,820,818,2,364,264,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_012,2019,1317,857,852,5,512,317,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_012,2024,1317,959,950,9,582,248,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_013,2014,1120,755,753,2,456,270,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_013,2019,1120,683,675,8,317,245,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_013,2024,1120,823,821,2,455,306,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_014,2014,1182,794,790,4,433,202,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_014,2019,1182,797,789,8,410,241,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_2,Diamond Harbour_AC_2_PS_014,2024,1182,738,734,4,362,188,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_001,2014,662,439,434,5,256,120,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_001,2019,662,478,471,7,280,130,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_001,2024,662,468,465,3,232,172,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_002,2014,923,651,644,7,353,194,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_002,2019,923,619,617,2,368,177,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_002,2024,923,643,641,2,283,203,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_003,2014,702,491,485,6,292,174,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_003,2019,702,439,428,11,182,147,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_003,2024,702,476,469,7,221,161,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_004,2014,1389,854,843,11,468,244,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_004,2019,1389,895,893,2,468,336,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_004,2024,1389,951,940,11,539,333,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_005,2014,1070,689,683,6,333,236,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_005,2019,1070,701,695,6,381,261,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_005,2024,1070,746,737,9,424,259,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_006,2014,694,459,454,5,272,155,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_006,2019,694,445,437,8,242,142,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_006,2024,694,508,502,6,264,167,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_007,2014,792,540,533,7,262,148,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_007,2019,792,546,536,10,291,188,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_007,2024,792,511,505,6,265,185,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_008,2014,1061,735,733,2,358,270,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_008,2019,1061,747,737,10,440,252,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_008,2024,1061,742,739,3,311,245,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_009,2014,897,562,559,3,550,195,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_009,2019,897,605,599,6,366,198,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_009,2024,897,641,638,3,337,174,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_010,2014,1383,944,937,7,477,259,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_010,2019,1383,964,962,2,592,339,Party_Gamma
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_010,2024,1383,914,907,7,400,301,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_011,2014,1209,801,790,11,414,220,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_011,2019,1209,806,802,4,365,222,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_011,2024,1209,891,886,5,519,305,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_012,2014,1003,702,696,6,424,261,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_012,2019,1003,632,623,9,357,180,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_012,2024,1003,695,687,8,395,257,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_013,2014,742,500,490,10,287,172,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_013,2019,742,541,530,11,307,135,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_013,2024,742,483,480,3,251,170,Party_Beta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_014,2014,1262,810,806,4,482,201,Party_Delta
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_014,2019,1262,817,808,9,499,302,Party_Alpha
+West Bengal,Diamond Harbour,Diamond Harbour_AC_3,Diamond Harbour_AC_3_PS_014,2024,1262,777,769,8,380,231,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_001,2014,1255,1559,913,2,464,260,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_001,2019,1255,1559,889,5,442,288,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_001,2024,1255,1559,869,3,521,316,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_002,2014,1277,1559,773,10,330,196,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_002,2019,1277,803,794,9,378,296,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_002,2024,1277,898,889,9,476,281,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_003,2014,1052,661,653,8,391,243,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_003,2019,1052,615,691,5,403,252,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_003,2024,1052,669,660,9,301,193,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_004,2014,1207,768,758,10,373,218,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_004,2019,1207,815,811,4,356,289,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_004,2024,1207,788,785,3,451,232,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_005,2014,939,679,671,8,287,193,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_005,2019,939,577,571,6,327,142,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_005,2024,939,580,573,7,246,215,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_006,2014,1264,821,816,5,380,204,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_006,2019,1264,802,795,7,450,264,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_006,2024,1264,910,902,8,488,330,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_007,2014,1186,762,758,4,746,226,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_007,2019,1186,877,872,5,537,303,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_007,2024,1186,807,798,9,440,207,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_008,2014,851,521,518,3,298,168,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_008,2019,851,588,581,7,274,190,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_008,2024,851,589,583,6,310,204,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_009,2014,1378,871,869,2,527,310,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_009,2019,1378,872,864,8,442,319,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_009,2024,1378,862,852,10,404,302,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_010,2014,722,472,465,7,257,125,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_010,2019,722,506,498,8,263,144,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_010,2024,722,455,450,5,223,113,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_011,2014,1068,656,642,11,348,230,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_011,2019,1068,684,680,4,381,217,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_011,2024,1068,658,656,2,316,205,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_012,2014,1174,862,858,4,523,239,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_012,2019,1174,848,843,5,468,279,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_012,2024,1174,849,845,4,439,219,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_013,2014,1024,700,692,8,416,174,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_013,2019,1024,646,644,2,341,185,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_013,2024,1024,650,648,2,393,198,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_014,2014,718,444,442,2,210,135,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_014,2019,718,501,498,3,229,149,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_1,Darjeeling_AC_1_PS_014,2024,718,497,490,7,277,129,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_001,2014,1052,1182,740,9,457,216,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_001,2019,1052,1182,690,10,291,212,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_001,2024,1052,1182,659,7,348,248,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_002,2014,731,1182,502,10,231,159,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_002,2019,731,471,460,11,240,159,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_002,2024,731,473,462,11,257,124,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_003,2014,944,596,589,7,955,180,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_003,2019,944,649,644,5,282,207,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_003,2024,944,577,573,4,283,185,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_004,2014,1130,788,781,7,376,222,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_004,2019,1130,689,684,5,416,180,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_004,2024,1130,779,772,7,469,193,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_005,2014,1259,829,827,2,349,269,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_005,2019,1259,856,852,4,521,257,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_005,2024,1259,869,862,7,530,226,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_006,2014,703,458,453,5,258,167,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_006,2019,703,507,502,5,254,172,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_006,2024,703,519,517,2,273,174,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_007,2014,861,548,540,8,248,196,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_007,2019,861,627,625,2,289,178,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_007,2024,861,627,624,3,353,205,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_008,2014,1177,730,722,8,424,256,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_008,2019,1177,793,784,9,360,258,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_008,2024,1177,756,747,9,323,222,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_009,2014,1158,794,784,10,381,284,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_009,2019,1158,841,831,10,354,292,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_009,2024,1158,801,794,7,401,244,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_010,2014,1268,927,924,3,540,266,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_010,2019,1268,872,867,5,466,262,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_010,2024,1268,3416,849,5,392,243,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_011,2014,770,495,488,7,215,154,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_011,2019,770,488,482,6,274,165,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_011,2024,770,924,534,4,310,134,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_012,2014,1093,729,718,11,378,212,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_012,2019,1093,677,668,9,386,193,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_012,2024,1093,781,775,6,376,229,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_013,2014,963,705,703,2,340,258,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_013,2019,963,656,652,4,319,207,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_013,2024,963,2688,670,2,327,207,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_014,2014,1375,891,885,6,444,304,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_014,2019,1375,879,871,8,440,301,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_2,Darjeeling_AC_2_PS_014,2024,1375,967,960,7,554,277,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_001,2014,938,1151,603,11,359,160,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_001,2019,938,1151,580,5,257,160,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_001,2024,938,1151,594,8,278,169,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_002,2014,1031,1151,748,9,461,227,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_002,2019,1031,686,682,4,379,207,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_002,2024,1031,651,648,3,314,208,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_003,2014,742,503,501,2,260,186,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_003,2019,742,466,455,11,237,120,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_003,2024,742,539,531,8,305,198,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_004,2014,1223,872,862,10,478,261,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_004,2019,1223,845,834,11,392,209,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_004,2024,1223,856,847,9,497,302,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_005,2014,1074,722,718,4,342,229,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_005,2019,1074,680,677,3,339,211,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_005,2024,1074,665,655,10,380,240,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_006,2014,843,521,514,7,265,140,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_006,2019,843,620,615,5,338,159,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_006,2024,843,570,563,7,285,213,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_007,2014,1395,909,905,4,392,312,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_007,2019,1395,863,858,5,440,295,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_007,2024,1395,914,911,3,503,285,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_008,2014,1320,943,934,9,494,241,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_008,2019,1320,878,867,11,499,301,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_008,2024,1320,921,916,5,410,308,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_009,2014,693,489,481,8,265,141,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_009,2019,693,490,488,2,230,160,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_009,2024,693,481,476,5,281,152,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_010,2014,1331,883,876,7,435,286,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_010,2019,1331,853,850,3,429,312,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_010,2024,1331,940,938,2,503,250,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_011,2014,1307,960,958,2,454,325,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_011,2019,1307,905,901,4,493,263,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_011,2024,1307,937,931,6,520,259,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_012,2014,1235,859,854,5,937,322,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_012,2019,1235,646,761,6,433,205,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_012,2024,1235,758,751,7,320,273,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_013,2014,1240,846,837,9,495,294,Party_Alpha
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_013,2019,1240,901,892,9,432,327,Party_Delta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_013,2024,1240,863,860,3,506,242,Party_Beta
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_014,2014,1199,746,741,5,445,275,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_014,2019,1199,857,846,11,356,262,Party_Gamma
+West Bengal,Darjeeling,Darjeeling_AC_3,Darjeeling_AC_3_PS_014,2024,1199,737,735,2,449,268,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_001,2014,1148,1307,754,6,351,189,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_001,2019,1148,1307,835,2,478,212,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_001,2024,1148,1307,765,11,407,253,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_002,2014,774,1307,521,10,226,173,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_002,2019,774,516,505,11,226,164,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_002,2024,774,532,523,9,259,156,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_003,2014,1358,940,934,6,578,352,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_003,2019,1358,980,969,11,545,316,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_003,2024,1358,995,992,3,488,359,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_004,2014,1120,817,811,6,349,270,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_004,2019,1120,777,766,11,406,265,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_004,2024,1120,770,761,9,426,235,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_005,2014,1370,984,981,3,415,344,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_005,2019,1370,866,857,9,497,321,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_005,2024,1370,949,938,11,469,253,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_006,2014,1391,964,957,7,513,313,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_006,2019,1391,955,950,5,405,289,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_006,2024,1391,1014,1009,5,601,368,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_007,2014,1396,889,880,9,404,304,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_007,2019,1396,4048,1002,10,620,254,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_007,2024,1396,977,969,8,526,360,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_008,2014,1383,866,858,8,435,258,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_008,2019,1383,996,992,4,526,349,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_008,2024,1383,881,878,3,452,225,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_009,2014,1213,809,804,5,494,280,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_009,2019,1213,757,748,9,337,207,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_009,2024,1213,787,778,9,346,220,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_010,2014,1069,745,740,5,341,262,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_010,2019,1069,760,753,7,446,203,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_010,2024,1069,665,657,8,368,216,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_011,2014,1102,740,729,11,379,195,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_011,2019,1102,672,664,8,289,205,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_011,2024,1102,728,720,8,310,219,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_012,2014,738,750,501,4,309,168,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_012,2019,738,480,472,8,277,178,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_012,2024,738,540,529,11,242,165,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_013,2014,850,572,565,7,332,167,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_013,2019,850,606,598,8,334,181,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_013,2024,850,532,530,2,309,167,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_014,2014,837,563,556,7,259,178,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_014,2019,837,591,584,7,260,210,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_1,Chennai South_AC_1_PS_014,2024,837,540,536,4,244,191,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_001,2014,1257,1746,909,9,483,271,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_001,2019,1257,1746,823,4,500,301,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_001,2024,1257,1746,851,6,387,287,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_002,2014,936,1746,586,11,307,191,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_002,2019,936,571,560,11,323,185,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_002,2024,936,599,594,5,303,175,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_003,2014,707,453,445,8,212,123,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_003,2019,707,503,495,8,208,173,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_003,2024,707,445,442,3,252,139,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_004,2014,662,470,467,3,212,118,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_004,2019,662,407,405,2,211,133,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_004,2024,662,444,438,6,188,111,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_005,2014,957,699,697,2,403,242,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_005,2019,957,759,611,2,351,225,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_005,2024,957,618,616,2,333,170,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_006,2014,788,538,536,2,247,172,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_006,2019,788,538,530,8,320,157,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_006,2024,788,482,478,4,250,167,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_007,2014,1020,667,665,2,323,191,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_007,2019,1020,745,743,2,409,204,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_007,2024,1020,734,726,8,391,229,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_008,2014,867,631,626,5,383,157,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_008,2019,867,590,585,5,318,221,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_008,2024,867,560,551,9,265,198,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_009,2014,859,634,632,2,383,173,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_009,2019,859,574,567,7,245,148,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_009,2024,859,603,594,9,290,183,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_010,2014,1228,1473,781,7,431,271,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_010,2019,1228,792,788,4,473,280,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_010,2024,1228,899,897,2,377,249,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_011,2014,1205,799,796,3,470,235,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_011,2019,1205,877,869,8,416,229,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_011,2024,1205,764,760,4,371,232,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_012,2014,1277,798,796,2,352,269,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_012,2019,1277,828,823,5,466,273,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_012,2024,1277,798,792,6,388,202,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_013,2014,952,582,579,3,255,210,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_013,2019,952,662,658,4,330,212,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_013,2024,952,582,574,8,270,201,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_014,2014,886,549,543,6,240,204,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_014,2019,886,566,563,3,319,143,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_2,Chennai South_AC_2_PS_014,2024,886,639,631,8,286,204,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_001,2014,1094,1241,691,11,399,175,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_001,2019,1094,1241,725,3,311,186,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_001,2024,1094,1241,734,7,341,242,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_002,2014,840,1008,576,11,336,205,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_002,2019,840,610,601,9,271,154,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_002,2024,840,535,533,2,312,158,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_003,2014,812,518,509,9,296,181,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_003,2019,812,577,571,6,263,143,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_003,2024,812,593,591,2,297,193,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_004,2014,654,425,418,7,189,140,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_004,2019,654,427,417,10,234,107,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_004,2024,654,419,415,4,238,106,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_005,2014,986,684,679,5,359,205,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_005,2019,986,607,598,9,324,178,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_005,2024,986,724,720,4,353,218,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_006,2014,777,540,535,5,284,135,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_006,2019,777,478,467,11,211,170,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_006,2024,777,483,474,9,246,163,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_007,2014,1136,725,716,9,307,222,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_007,2019,1136,786,776,10,300,203,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_007,2024,1136,771,765,6,440,230,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_008,2014,820,595,587,8,344,187,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_008,2019,820,525,520,5,298,163,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_008,2024,820,590,581,9,307,165,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_009,2014,861,549,540,9,231,154,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_009,2019,861,604,599,5,290,167,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_009,2024,861,563,556,7,324,170,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_010,2014,799,568,557,11,236,182,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_010,2019,799,535,532,3,236,197,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_010,2024,799,494,488,6,234,156,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_011,2014,930,586,577,9,568,201,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_011,2019,930,654,643,11,313,228,Party_Alpha
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_011,2024,930,647,642,5,312,166,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_012,2014,1172,841,834,7,512,223,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_012,2019,1172,757,754,3,456,229,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_012,2024,1172,747,745,2,314,269,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_013,2014,1305,797,786,11,422,237,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_013,2019,1305,797,786,11,373,268,Party_Gamma
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_013,2024,1305,923,915,8,484,234,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_014,2014,790,567,565,2,262,164,Party_Delta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_014,2019,790,565,559,6,244,153,Party_Beta
+Tamil Nadu,Chennai South,Chennai South_AC_3,Chennai South_AC_3_PS_014,2024,790,516,510,6,222,141,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_001,2014,720,891,438,6,247,137,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_001,2019,720,891,484,4,224,134,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_001,2024,720,891,505,5,497,174,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_002,2014,813,891,536,3,231,136,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_002,2019,813,531,528,3,242,176,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_002,2024,813,532,527,5,315,152,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_003,2014,1199,768,758,10,339,243,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_003,2019,1199,793,788,5,434,251,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_003,2024,1199,836,833,3,354,256,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_004,2014,784,490,479,11,277,160,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_004,2019,784,529,525,4,323,183,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_004,2024,784,520,517,3,281,173,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_005,2014,793,550,542,8,328,184,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_005,2019,793,497,491,6,282,123,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_005,2024,793,509,507,2,303,192,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_006,2014,1208,769,758,11,438,248,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_006,2019,1208,753,742,11,354,194,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_006,2024,1208,869,865,4,480,283,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_007,2014,1305,796,789,7,399,225,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_007,2019,1305,799,788,11,440,220,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_007,2024,1305,908,901,7,417,232,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_008,2014,886,610,605,5,338,160,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_008,2019,886,579,568,11,306,172,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_008,2024,886,594,584,10,318,207,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_009,2014,688,476,474,2,262,163,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_009,2019,688,446,436,10,267,111,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_009,2024,688,472,467,5,248,147,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_010,2014,1271,790,787,3,350,278,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_010,2019,1271,842,833,9,491,315,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_010,2024,1271,862,857,5,463,248,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_011,2014,813,560,553,7,264,138,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_011,2019,813,504,498,6,275,165,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_011,2024,813,542,535,7,297,196,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_012,2014,791,495,493,2,289,182,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_012,2019,791,515,510,5,279,146,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_012,2024,791,494,492,2,207,143,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_013,2014,732,460,452,8,263,165,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_013,2019,732,500,490,10,260,174,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_013,2024,732,482,476,6,236,133,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_014,2014,1290,839,831,8,362,297,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_014,2019,1290,861,854,7,507,324,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_1,Madurai_AC_1_PS_014,2024,1290,864,853,11,439,248,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_001,2014,975,1161,665,4,327,230,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_001,2019,975,1161,663,5,371,230,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_001,2024,975,1161,644,4,364,212,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_002,2014,837,1161,589,5,305,208,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_002,2019,837,531,526,5,278,167,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_002,2024,837,562,552,10,241,142,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_003,2014,1084,2972,735,8,343,244,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_003,2019,1084,792,789,3,409,267,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_003,2024,1084,745,743,2,403,272,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_004,2014,977,670,663,7,396,172,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_004,2019,977,655,645,10,361,225,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_004,2024,977,641,635,6,333,219,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_005,2014,918,651,644,7,309,241,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_005,2019,918,607,605,2,335,175,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_005,2024,918,671,663,8,383,193,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_006,2014,1016,665,655,10,283,192,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_006,2019,1016,641,637,4,351,241,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_006,2024,1016,634,629,5,314,166,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_007,2014,866,574,563,11,305,185,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_007,2019,866,601,594,7,303,180,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_007,2024,866,601,598,3,274,163,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_008,2014,1040,705,702,3,351,206,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_008,2019,1040,656,653,3,279,215,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_008,2024,1040,642,640,2,274,190,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_009,2014,940,587,578,9,335,185,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_009,2019,940,656,646,10,322,186,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_009,2024,940,641,636,5,345,202,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_010,2014,688,464,457,7,235,151,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_010,2019,688,451,440,11,209,163,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_010,2024,688,448,437,11,268,119,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_011,2014,693,426,419,7,215,127,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_011,2019,693,507,497,10,297,133,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_011,2024,693,508,500,8,308,130,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_012,2014,1190,769,763,6,387,254,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_012,2019,1190,743,740,3,399,271,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_012,2024,1190,842,831,11,422,212,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_013,2014,1172,840,837,3,395,264,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_013,2019,1172,799,792,7,406,243,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_013,2024,1172,778,770,8,916,214,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_014,2014,1082,740,733,7,316,240,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_014,2019,1082,699,688,11,363,205,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_2,Madurai_AC_2_PS_014,2024,1082,722,718,4,328,198,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_001,2014,684,421,414,7,216,129,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_001,2019,684,441,430,11,193,135,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_001,2024,684,419,410,9,219,132,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_002,2014,658,449,443,6,190,116,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_002,2019,658,471,464,7,245,154,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_002,2024,658,429,420,9,201,109,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_003,2014,994,622,611,11,349,206,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_003,2019,994,652,645,7,359,240,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_003,2024,994,726,723,3,400,196,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_004,2014,828,540,530,10,266,134,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_004,2019,828,507,497,10,218,186,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_004,2024,828,564,555,9,268,167,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_005,2014,1358,845,838,7,455,232,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_005,2019,1358,924,921,3,447,323,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_005,2024,1358,877,867,10,476,311,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_006,2014,958,669,662,7,374,207,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_006,2019,958,635,627,8,340,158,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_006,2024,958,626,618,8,293,213,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_007,2014,1189,849,847,2,517,309,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_007,2019,1189,789,782,7,391,248,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_007,2024,1189,734,730,4,364,195,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_008,2014,1088,797,791,6,400,210,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_008,2019,1088,693,685,8,329,236,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_008,2024,1088,722,719,3,384,194,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_009,2014,1264,861,858,3,372,306,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_009,2019,1264,829,826,3,354,281,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_009,2024,1264,885,875,10,506,302,Party_Delta
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_010,2014,1238,826,821,5,387,249,Party_Alpha
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_010,2019,1238,866,863,3,412,216,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_010,2024,1238,901,894,7,391,260,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_011,2014,817,980,506,6,260,132,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_011,2019,817,574,569,5,285,180,Party_Beta
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_011,2024,817,566,556,10,236,201,Party_Gamma
+Tamil Nadu,Madurai,Madurai_AC_3,Madurai_AC_3_PS_012,2014,1131,820,817,3,445,290,Party_Alpha
