@@ -31,6 +31,81 @@ const requestProfiling = async (filePath) => {
   }
 };
 
+/**
+ * Infers semantic schema mapping with confidence scores.
+ */
+const inferSchemaMapping = async (filePath) => {
+  try {
+    const response = await mlClient.post('/ml/schema-mapping/infer', {
+      file_path: filePath,
+    });
+    if (response.data && response.data.status === 'success') {
+      return response.data.data;
+    }
+    throw new Error('ML schema mapping returned unexpected format');
+  } catch (error) {
+    const errorDetail =
+      error.response?.data?.detail || error.response?.data?.message || error.message;
+    throw new Error(`ML Schema Mapping Error: ${errorDetail}`);
+  }
+};
+
+/**
+ * Runs feature engineering plugins for confirmed schema mapping.
+ */
+const runFeatureEngineering = async (filePath, mapping) => {
+  try {
+    const response = await mlClient.post('/ml/features/run', {
+      file_path: filePath,
+      mapping,
+    });
+    if (response.data && response.data.status === 'success') {
+      return response.data.data;
+    }
+    throw new Error('ML feature engineering returned unexpected format');
+  } catch (error) {
+    const errorDetail =
+      error.response?.data?.detail || error.response?.data?.message || error.message;
+    throw new Error(`ML Feature Engineering Error: ${errorDetail}`);
+  }
+};
+
+/**
+ * Builds peer groups, computes robust median/MAD, and applies shrinkage.
+ */
+const buildPeerGroups = async ({
+  filePath,
+  mapping,
+  groupColumn = null,
+  parentColumn = null,
+  featureColumns = null,
+  shrinkageN0 = 15,
+  minGroupSize = 5,
+}) => {
+  try {
+    const response = await mlClient.post('/ml/peer-groups/build', {
+      file_path: filePath,
+      mapping,
+      group_column: groupColumn,
+      parent_column: parentColumn,
+      feature_columns: featureColumns,
+      shrinkage_n0: shrinkageN0,
+      min_group_size: minGroupSize,
+    });
+    if (response.data && response.data.status === 'success') {
+      return response.data.data;
+    }
+    throw new Error('ML peer groups returned unexpected format');
+  } catch (error) {
+    const errorDetail =
+      error.response?.data?.detail || error.response?.data?.message || error.message;
+    throw new Error(`ML Peer Group Error: ${errorDetail}`);
+  }
+};
+
 module.exports = {
   requestProfiling,
+  inferSchemaMapping,
+  runFeatureEngineering,
+  buildPeerGroups,
 };

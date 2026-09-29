@@ -15,12 +15,14 @@ import {
   ShieldCheck,
   Layers,
   Activity,
+  Users,
 } from 'lucide-react';
 import { datasetService } from '../services/datasetService';
 import { useToast } from '../context/ToastContext';
 import StatusBadge from '../components/StatusBadge';
 import { SkeletonCard, SkeletonTable } from '../components/LoadingSkeleton';
 import ErrorState from '../components/ErrorState';
+import SchemaMappingModal from '../components/SchemaMappingModal';
 
 const formatBytes = (bytes) => {
   if (!bytes) return '0 B';
@@ -40,6 +42,7 @@ const DatasetDetailPage = () => {
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState('schema'); // 'schema' | 'log' | 'jobs'
   const [copiedHash, setCopiedHash] = useState(false);
+  const [showMappingModal, setShowMappingModal] = useState(false);
 
   const fetchDatasetDetails = useCallback(async () => {
     setLoading(true);
@@ -117,8 +120,8 @@ const DatasetDetailPage = () => {
 
   return (
     <div className="space-y-6 max-w-7xl mx-auto">
-      {/* Top Breadcrumb & Actions */}
-      <div className="flex items-center justify-between">
+      {/* Top Breadcrumb & Phase 3 Action Buttons */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <Link
           to="/datasets"
           className="inline-flex items-center space-x-1.5 text-xs font-semibold text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors"
@@ -126,13 +129,51 @@ const DatasetDetailPage = () => {
           <ArrowLeft className="w-4 h-4" />
           <span>Back to Datasets</span>
         </Link>
-        <button
-          onClick={fetchDatasetDetails}
-          title="Refresh dataset metadata"
-          className="p-1.5 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-        >
-          <RefreshCw className="w-4 h-4" />
-        </button>
+
+        <div className="flex items-center space-x-2 flex-wrap gap-y-2">
+          {/* Schema Mapping Confirmation Button */}
+          <button
+            onClick={() => setShowMappingModal(true)}
+            className={`inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border text-xs font-semibold transition-colors ${
+              dataset.isSchemaConfirmed
+                ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-300 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 hover:bg-emerald-100'
+                : 'bg-amber-50 dark:bg-amber-950/40 border-amber-300 dark:border-amber-800 text-amber-800 dark:text-amber-300 hover:bg-amber-100'
+            }`}
+          >
+            {dataset.isSchemaConfirmed ? (
+              <CheckCircle className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+            ) : (
+              <AlertTriangle className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
+            )}
+            <span>{dataset.isSchemaConfirmed ? 'Schema Confirmed' : 'Confirm Schema'}</span>
+          </button>
+
+          {/* Features Button */}
+          <Link
+            to={`/features?datasetId=${id}`}
+            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-2xs"
+          >
+            <Layers className="w-3.5 h-3.5 text-brand-600 dark:text-brand-400" />
+            <span>Engineered Features</span>
+          </Link>
+
+          {/* Peer Groups Button */}
+          <Link
+            to={`/peer-groups?datasetId=${id}`}
+            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-2xs"
+          >
+            <Users className="w-3.5 h-3.5 text-brand-600 dark:text-brand-400" />
+            <span>Peer Groups (C2)</span>
+          </Link>
+
+          <button
+            onClick={fetchDatasetDetails}
+            title="Refresh dataset metadata"
+            className="p-1.5 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+          >
+            <RefreshCw className="w-4 h-4" />
+          </button>
+        </div>
       </div>
 
       {/* Dataset Header Card */}
@@ -435,6 +476,14 @@ const DatasetDetailPage = () => {
           </div>
         </div>
       )}
+
+      {/* Schema Mapping Modal */}
+      <SchemaMappingModal
+        isOpen={showMappingModal}
+        onClose={() => setShowMappingModal(false)}
+        datasetId={id}
+        onMappingSaved={() => fetchDatasetDetails()}
+      />
     </div>
   );
 };

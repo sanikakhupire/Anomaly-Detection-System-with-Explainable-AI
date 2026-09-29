@@ -17,6 +17,8 @@ import ModelsPage from './pages/ModelsPage';
 import ReportsPage from './pages/ReportsPage';
 import SettingsPage from './pages/SettingsPage';
 import ProfilePage from './pages/ProfilePage';
+import FeaturesPage from './pages/FeaturesPage';
+import PeerGroupsPage from './pages/PeerGroupsPage';
 
 function App() {
   return (
@@ -41,6 +43,8 @@ function App() {
                 <Route path="dashboard" element={<DashboardPage />} />
                 <Route path="datasets" element={<DatasetsPage />} />
                 <Route path="datasets/:id" element={<DatasetDetailPage />} />
+                <Route path="features" element={<FeaturesPage />} />
+                <Route path="peer-groups" element={<PeerGroupsPage />} />
                 <Route path="anomalies" element={<AnomaliesPage />} />
                 <Route path="reviews" element={<ReviewsPage />} />
                 <Route path="models" element={<ModelsPage />} />

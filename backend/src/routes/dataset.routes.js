@@ -22,6 +22,16 @@ router.post(
 router.get('/', authenticate, getDatasets);
 router.get('/:id', authenticate, getDatasetById);
 
+// Schema mapping endpoints (GET: view/infer, PUT: confirm/edit)
+const { getSchemaMapping, updateSchemaMapping } = require('../controllers/feature.controller');
+router.get('/:id/schema-mapping', authenticate, getSchemaMapping);
+router.put(
+  '/:id/schema-mapping',
+  authenticate,
+  requireRole('ADMIN', 'ANALYST'),
+  updateSchemaMapping
+);
+
 // Delete dataset (ADMIN and ANALYST)
 router.delete('/:id', authenticate, requireRole('ADMIN', 'ANALYST'), deleteDataset);
 

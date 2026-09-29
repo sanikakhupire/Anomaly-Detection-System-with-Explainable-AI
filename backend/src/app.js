@@ -8,6 +8,8 @@ const { sendSuccess, sendError } = require('./utils/response');
 const authRoutes = require('./routes/auth.routes');
 const datasetRoutes = require('./routes/dataset.routes');
 const jobRoutes = require('./routes/job.routes');
+const featureRoutes = require('./routes/feature.routes');
+const peerGroupRoutes = require('./routes/peerGroup.routes');
 
 const app = express();
 
@@ -83,6 +85,8 @@ app.get('/api/health', (req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/datasets', datasetRoutes);
 app.use('/api/jobs', jobRoutes);
+app.use('/api/features', featureRoutes);
+app.use('/api/peer-groups', peerGroupRoutes);
 
 // 404 Handler for undefined routes
 app.use((req, res) => {

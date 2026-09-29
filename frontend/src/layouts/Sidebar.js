@@ -10,6 +10,8 @@ import {
   Settings,
   ShieldCheck,
   ChevronRight,
+  Layers,
+  Users,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import StatusBadge from '../components/StatusBadge';
@@ -17,6 +19,8 @@ import StatusBadge from '../components/StatusBadge';
 const navigationItems = [
   { name: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
   { name: 'Datasets', path: '/datasets', icon: Database },
+  { name: 'Features', path: '/features', icon: Layers },
+  { name: 'Peer Groups', path: '/peer-groups', icon: Users },
   { name: 'Anomalies', path: '/anomalies', icon: AlertCircle },
   { name: 'Review Queue', path: '/reviews', icon: CheckSquare },
   { name: 'Model & Config', path: '/models', icon: Cpu },

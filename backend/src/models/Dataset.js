@@ -84,6 +84,14 @@ const datasetSchema = new mongoose.Schema(
       type: Number,
       default: null,
     },
+    schemaMapping: {
+      type: mongoose.Schema.Types.Mixed,
+      default: null,
+    },
+    isSchemaConfirmed: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: true,
