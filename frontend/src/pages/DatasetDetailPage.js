@@ -16,6 +16,7 @@ import {
   Layers,
   Activity,
   Users,
+  AlertCircle,
 } from 'lucide-react';
 import { datasetService } from '../services/datasetService';
 import { useToast } from '../context/ToastContext';
@@ -164,6 +165,15 @@ const DatasetDetailPage = () => {
           >
             <Users className="w-3.5 h-3.5 text-brand-600 dark:text-brand-400" />
             <span>Peer Groups (C2)</span>
+          </Link>
+
+          {/* Detected Anomalies Button */}
+          <Link
+            to={`/anomalies?datasetId=${id}`}
+            className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors shadow-2xs"
+          >
+            <AlertCircle className="w-3.5 h-3.5 text-rose-600 dark:text-rose-400" />
+            <span>Detected Anomalies</span>
           </Link>
 
           <button

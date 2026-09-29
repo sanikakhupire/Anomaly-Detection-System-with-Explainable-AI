@@ -103,9 +103,47 @@ const buildPeerGroups = async ({
   }
 };
 
+/**
+ * Executes statistical and machine-learning detectors on dataset via ML service.
+ */
+const analyzeDataset = async ({
+  filePath,
+  featureCols = null,
+  peerGroupCol = null,
+  peerBaselines = null,
+  dateCol = null,
+  detectors = null,
+  contamination = 0.05,
+  randomState = 42,
+  maxRecords = null,
+}) => {
+  try {
+    const response = await mlClient.post('/ml/analyze', {
+      file_path: filePath,
+      feature_cols: featureCols,
+      peer_group_col: peerGroupCol,
+      peer_baselines: peerBaselines,
+      date_col: dateCol,
+      detectors,
+      contamination,
+      random_state: randomState,
+      max_records: maxRecords,
+    });
+    if (response.data && response.data.success) {
+      return response.data.data;
+    }
+    throw new Error('ML anomaly analysis returned unexpected format');
+  } catch (error) {
+    const errorDetail =
+      error.response?.data?.detail || error.response?.data?.message || error.message;
+    throw new Error(`ML Anomaly Detection Error: ${errorDetail}`);
+  }
+};
+
 module.exports = {
   requestProfiling,
   inferSchemaMapping,
   runFeatureEngineering,
   buildPeerGroups,
+  analyzeDataset,
 };

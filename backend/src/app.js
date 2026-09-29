@@ -10,6 +10,7 @@ const datasetRoutes = require('./routes/dataset.routes');
 const jobRoutes = require('./routes/job.routes');
 const featureRoutes = require('./routes/feature.routes');
 const peerGroupRoutes = require('./routes/peerGroup.routes');
+const anomalyRoutes = require('./routes/anomaly.routes');
 
 const app = express();
 
@@ -87,6 +88,7 @@ app.use('/api/datasets', datasetRoutes);
 app.use('/api/jobs', jobRoutes);
 app.use('/api/features', featureRoutes);
 app.use('/api/peer-groups', peerGroupRoutes);
+app.use('/api/anomalies', anomalyRoutes);
 
 // 404 Handler for undefined routes
 app.use((req, res) => {
