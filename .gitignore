@@ -24,6 +24,9 @@ yarn-debug.log*
 yarn-error.log*
 *.log
 
+# Uploaded data files
+data/uploads/
+
 # Editor & OS files
 .vscode/
 .idea/
