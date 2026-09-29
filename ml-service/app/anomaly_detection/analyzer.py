@@ -1,7 +1,8 @@
 """
 Core Anomaly Analyzer Engine.
 Coordinates data reading, feature selection, detector instantiation,
-parallel execution, ensemble consensus combination, and structured record output.
+conformal calibration (C1), p-value fusion (ACAT/Fisher/Stouffer),
+Benjamini-Hochberg False Discovery Rate (FDR) control, and ATPI triage ranking (C7).
 """
 
 from typing import Dict, Any, List, Optional
@@ -10,6 +11,15 @@ import numpy as np
 import pandas as pd
 from app.anomaly_detection.registry import DetectorRegistry
 from app.anomaly_detection.base import BaseDetector
+from app.calibration.conformal import ConformalCalibrator
+from app.calibration.pvalue_fusion import (
+    combine_pvalues_acat,
+    combine_pvalues_fisher,
+    combine_pvalues_stouffer,
+    adjust_fdr_bh,
+    adjust_fdr_by,
+)
+from app.calibration.atpi import ATPICalculator
 
 
 def run_anomaly_analysis(
@@ -22,19 +32,23 @@ def run_anomaly_analysis(
     contamination: float = 0.05,
     random_state: int = 42,
     chunk_size: int = 10000,
-    max_records: Optional[int] = None
+    max_records: Optional[int] = None,
+    fusion_method: str = "acat",
+    fdr_method: str = "bh",
+    target_fdr: float = 0.05,
+    contamination_trim: float = 0.02,
 ) -> Dict[str, Any]:
     """
     Execute statistical and machine-learning detectors on dataset.
-    Returns per-record scores, flags, ensemble consensus, and summary metrics.
+    Converts raw scores to conformal p-values, combines via ACAT,
+    controls FDR via Benjamini-Hochberg, and computes ATPI priority.
     """
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"Dataset file not found at: {file_path}")
 
-    # Read file chunk-friendly
+    # Read file
     ext = os.path.splitext(file_path)[1].lower()
     if ext == ".csv":
-        # Check size: if small read directly, if large read first chunk or iterate
         df = pd.read_csv(file_path, nrows=max_records)
     elif ext in [".xlsx", ".xls"]:
         df = pd.read_excel(file_path, nrows=max_records)
@@ -48,9 +62,14 @@ def run_anomaly_analysis(
                 "total_records": 0,
                 "total_anomalies": 0,
                 "anomaly_rate": 0.0,
-                "detector_counts": {}
+                "significant_fdr_count": 0,
+                "target_fdr": target_fdr,
+                "fusion_method": fusion_method.upper(),
+                "fdr_method": fdr_method.upper(),
+                "detector_counts": {},
+                "p_value_distribution": [],
             },
-            "records": []
+            "records": [],
         }
 
     # Identify numeric columns if not explicitly provided
@@ -59,7 +78,6 @@ def run_anomaly_analysis(
         for col in df.columns:
             if col in [peer_group_col, date_col]:
                 continue
-            # Check if column is numeric or can be converted to numeric
             converted = pd.to_numeric(df[col], errors="coerce")
             if converted.notna().sum() > 0.5 * n_records:
                 feature_cols.append(col)
@@ -79,12 +97,11 @@ def run_anomaly_analysis(
     detector_flags: Dict[str, np.ndarray] = {}
     record_tags: List[List[str]] = [[] for _ in range(n_records)]
 
-    # Weights for Phase 4 ensemble combination
     weights_dict = {
         "robust_z": 0.40,
         "isolation_forest": 0.35,
         "z_score": 0.15,
-        "temporal": 0.10
+        "temporal": 0.10,
     }
 
     active_detectors = []
@@ -95,20 +112,20 @@ def run_anomaly_analysis(
                 det = DetectorRegistry.get(
                     "z_score",
                     peer_group_col=peer_group_col,
-                    random_state=random_state
+                    random_state=random_state,
                 )
             elif d_name == "robust_z":
                 det = DetectorRegistry.get(
                     "robust_z",
                     peer_group_col=peer_group_col,
                     peer_baselines=peer_baselines,
-                    random_state=random_state
+                    random_state=random_state,
                 )
             elif d_name == "isolation_forest":
                 det = DetectorRegistry.get(
                     "isolation_forest",
                     contamination=contamination,
-                    random_state=random_state
+                    random_state=random_state,
                 )
             elif d_name == "temporal":
                 if not date_col or date_col not in df.columns:
@@ -116,7 +133,7 @@ def run_anomaly_analysis(
                 det = DetectorRegistry.get(
                     "temporal",
                     date_col=date_col,
-                    random_state=random_state
+                    random_state=random_state,
                 )
             else:
                 continue
@@ -132,36 +149,99 @@ def run_anomaly_analysis(
                     if t not in record_tags[i]:
                         record_tags[i].append(t)
 
-        except Exception as e:
-            # If a detector fails, log and continue with remaining detectors
+        except Exception:
             continue
 
     if not active_detectors:
         raise RuntimeError("No detectors could be successfully initialized and executed.")
 
-    # Re-normalize weights for active detectors
+    # 1. Conformal Calibration (C1): Convert raw scores to conformal p-values
+    calibrator = ConformalCalibrator(
+        contamination_trim=contamination_trim, random_state=random_state
+    )
+    calibrator.fit_calibration_scores(detector_raw_scores)
+    detector_pvalues = calibrator.compute_pvalues(detector_raw_scores)
+
+    # 2. Re-normalize detector weights
     total_w = sum(weights_dict.get(d, 0.25) for d in active_detectors)
     norm_weights = {d: weights_dict.get(d, 0.25) / total_w for d in active_detectors}
+    norm_weights_arr = np.array([norm_weights[d] for d in active_detectors], dtype=float)
 
-    # Compute ensemble score and overall is_anomaly
-    ensemble_scores = np.zeros(n_records, dtype=float)
+    # 3. Transparent Combined Normalized Score
+    combined_scores = np.zeros(n_records, dtype=float)
     for d_name in active_detectors:
-        ensemble_scores += norm_weights[d_name] * detector_norm_scores[d_name]
+        combined_scores += norm_weights[d_name] * detector_norm_scores[d_name]
 
+    # 4. Multi-Detector P-Value Fusion (ACAT / Fisher / Stouffer)
+    p_mat = np.column_stack([detector_pvalues[d] for d in active_detectors])
+
+    if fusion_method.lower() == "fisher":
+        combined_p = combine_pvalues_fisher(p_mat, weights=norm_weights_arr)
+    elif fusion_method.lower() == "stouffer":
+        combined_p = combine_pvalues_stouffer(p_mat, weights=norm_weights_arr)
+    else:
+        # Default: ACAT (Aggregated Cauchy Association Test)
+        combined_p = combine_pvalues_acat(p_mat, weights=norm_weights_arr)
+
+    # 5. False Discovery Rate (FDR) Multiple Testing Correction (BH / BY)
+    if fdr_method.lower() == "by":
+        q_values = adjust_fdr_by(combined_p)
+    else:
+        q_values = adjust_fdr_bh(combined_p)
+
+    # 6. ATPI Priority Calculation (C7)
+    # Detect population column if present for demographic scale factor
+    pop_col = None
+    for col in df.columns:
+        c_lower = col.lower()
+        if any(k in c_lower for k in ["population", "workers", "electors", "households"]):
+            pop_col = col
+            break
+
+    atpi_calc = ATPICalculator()
+    atpi_results = []
+
+    # Effect size proxy: maximum Robust Z score or normalized score * 4
+    if "robust_z" in detector_raw_scores:
+        effect_sizes = detector_raw_scores["robust_z"]
+    else:
+        effect_sizes = combined_scores * 4.0
+
+    for i in range(n_records):
+        is_peer_ctx = "PEER_GROUP_DEVIATION" in record_tags[i]
+        pop_val = float(df.at[i, pop_col]) if (pop_col and pd.notna(df.at[i, pop_col])) else None
+
+        atpi_res = atpi_calc.compute_atpi(
+            q_value=q_values[i],
+            effect_size=effect_sizes[i],
+            is_peer_context=is_peer_ctx,
+            population_value=pop_val,
+        )
+        atpi_results.append(atpi_res)
+
+    # 7. Overall Anomaly Classification:
+    # A record is anomalous if q_value <= target_fdr OR ensemble score >= 0.50 OR strongly flagged
     overall_is_anomaly = np.zeros(n_records, dtype=bool)
     detector_counts = {d: int(np.sum(detector_flags[d])) for d in active_detectors}
 
     for i in range(n_records):
-        # A record is anomalous if ensemble score exceeds 0.50 OR any detector flags it
+        fdr_significant = q_values[i] <= target_fdr
         any_flag = any(detector_flags[d][i] for d in active_detectors)
-        overall_is_anomaly[i] = any_flag or (ensemble_scores[i] >= 0.50)
+        overall_is_anomaly[i] = fdr_significant or any_flag or (combined_scores[i] >= 0.50)
 
     total_anomalies = int(np.sum(overall_is_anomaly))
+    significant_fdr_count = int(np.sum(q_values <= target_fdr))
     anomaly_rate = float(total_anomalies / n_records) if n_records > 0 else 0.0
+
+    # 8. P-value distribution histogram (10 bins) for methodology visualization
+    hist_counts, bin_edges = np.histogram(combined_p, bins=10, range=(0.0, 1.0))
+    p_val_distribution = [
+        {"bin": f"{bin_edges[b]:.1f}-{bin_edges[b+1]:.1f}", "count": int(hist_counts[b])}
+        for b in range(10)
+    ]
 
     # Format per-record results
     records_output = []
-    # Identify key display columns (peer group, date, and first few features)
     display_cols = []
     if peer_group_col and peer_group_col in df.columns:
         display_cols.append(peer_group_col)
@@ -187,27 +267,48 @@ def run_anomaly_analysis(
         p_grp = str(df.at[i, peer_group_col]) if (peer_group_col and peer_group_col in df.columns) else None
 
         scores_obj = {d: float(np.round(detector_raw_scores[d][i], 4)) for d in active_detectors}
+        pvals_obj = {d: float(np.round(detector_pvalues[d][i], 6)) for d in active_detectors}
         flags_obj = {d: bool(detector_flags[d][i]) for d in active_detectors}
+
+        # Contributing detection methods: detectors that flagged or had p < 0.05
+        contrib_methods = [
+            d for d in active_detectors if detector_flags[d][i] or detector_pvalues[d][i] < 0.05
+        ]
 
         records_output.append({
             "record_index": int(i),
             "record_data": rec_data,
             "detector_scores": scores_obj,
+            "detector_pvalues": pvals_obj,
             "detector_flags": flags_obj,
-            "ensemble_score": float(np.round(ensemble_scores[i], 4)),
+            "combined_p": float(np.round(combined_p[i], 6)),
+            "q_value": float(np.round(q_values[i], 6)),
+            "combined_score": float(np.round(combined_scores[i], 4)),
+            "ensemble_score": float(np.round(combined_scores[i], 4)),
+            "atpi": atpi_results[i]["atpi"],
+            "atpi_breakdown": atpi_results[i]["breakdown"],
+            "triage_priority": atpi_results[i]["priority"],
             "is_anomaly": bool(overall_is_anomaly[i]),
             "flags": record_tags[i],
-            "peer_group": p_grp
+            "peer_group": p_grp,
+            "peer_context_flag": "PEER_GROUP_DEVIATION" in record_tags[i],
+            "detection_methods": contrib_methods,
         })
 
     return {
         "summary": {
             "total_records": n_records,
             "total_anomalies": total_anomalies,
+            "significant_fdr_count": significant_fdr_count,
             "anomaly_rate": round(anomaly_rate, 4),
+            "target_fdr": target_fdr,
+            "fusion_method": fusion_method.upper(),
+            "fdr_method": fdr_method.upper(),
+            "atpi_formula": ATPICalculator.FORMULA_DESCRIPTION,
             "detector_counts": detector_counts,
             "active_detectors": active_detectors,
-            "feature_cols_analyzed": feature_cols
+            "feature_cols_analyzed": feature_cols,
+            "p_value_distribution": p_val_distribution,
         },
-        "records": records_output
+        "records": records_output,
     }

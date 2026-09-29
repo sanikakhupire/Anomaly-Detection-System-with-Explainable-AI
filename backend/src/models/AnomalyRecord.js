@@ -23,15 +23,53 @@ const anomalyRecordSchema = new mongoose.Schema(
       of: Number,
       default: {},
     },
+    detectorPValues: {
+      type: Map,
+      of: Number,
+      default: {},
+    },
     detectorFlags: {
       type: Map,
       of: Boolean,
       default: {},
     },
+    combinedP: {
+      type: Number,
+      default: 1.0,
+      index: true,
+    },
+    qValue: {
+      type: Number,
+      default: 1.0,
+      index: true,
+    },
+    combinedScore: {
+      type: Number,
+      default: 0.0,
+    },
     ensembleScore: {
       type: Number,
       required: true,
       default: 0.0,
+      index: true,
+    },
+    atpi: {
+      type: Number,
+      default: 0.0,
+      index: true,
+    },
+    atpiBreakdown: {
+      type: Map,
+      of: Number,
+      default: {},
+    },
+    detectionMethods: {
+      type: [String],
+      default: [],
+    },
+    peerContextFlag: {
+      type: Boolean,
+      default: false,
       index: true,
     },
     isAnomaly: {
@@ -89,6 +127,8 @@ const anomalyRecordSchema = new mongoose.Schema(
 // Compound indexes for fast server-side query filtering and sorting
 anomalyRecordSchema.index({ dataset: 1, isAnomaly: 1, ensembleScore: -1 });
 anomalyRecordSchema.index({ dataset: 1, recordIndex: 1 }, { unique: true });
+anomalyRecordSchema.index({ dataset: 1, qValue: 1 });
+anomalyRecordSchema.index({ dataset: 1, atpi: -1 });
 anomalyRecordSchema.index({ dataset: 1, status: 1 });
 anomalyRecordSchema.index({ dataset: 1, reviewStatus: 1 });
 

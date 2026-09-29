@@ -23,6 +23,10 @@ const detectAnomalies = async (req, res, next) => {
       dateCol = null,
       featureCols = null,
       maxRecords = null,
+      fusionMethod = 'acat',
+      fdrMethod = 'bh',
+      targetFdr = 0.05,
+      contaminationTrim = 0.02,
     } = req.body;
 
     if (!datasetId || !mongoose.Types.ObjectId.isValid(datasetId)) {
@@ -107,12 +111,16 @@ const detectAnomalies = async (req, res, next) => {
         contamination: parseFloat(contamination),
         randomState: parseInt(randomState, 10),
         maxRecords,
+        fusionMethod,
+        fdrMethod,
+        targetFdr: parseFloat(targetFdr),
+        contaminationTrim: parseFloat(contaminationTrim),
       });
 
       const { summary, records } = mlResult;
 
       job.progress = 75;
-      job.step = 'Storing detected anomaly records into MongoDB';
+      job.step = 'Storing calibrated anomaly records into MongoDB';
       await job.save();
 
       // 4. Remove previous anomaly records for this dataset to maintain clean idempotent state
@@ -125,14 +133,22 @@ const detectAnomalies = async (req, res, next) => {
           recordIndex: r.record_index,
           recordData: r.record_data,
           detectorScores: r.detector_scores,
+          detectorPValues: r.detector_pvalues || {},
           detectorFlags: r.detector_flags,
-          ensembleScore: r.ensemble_score,
+          combinedP: r.combined_p ?? 1.0,
+          qValue: r.q_value ?? 1.0,
+          combinedScore: r.combined_score ?? r.ensemble_score ?? 0.0,
+          ensembleScore: r.ensemble_score ?? 0.0,
+          atpi: r.atpi ?? 0.0,
+          atpiBreakdown: r.atpi_breakdown || {},
           isAnomaly: r.is_anomaly,
-          flags: r.flags,
+          flags: r.flags || [],
           peerGroup: r.peer_group,
+          peerContextFlag: Boolean(r.peer_context_flag),
+          detectionMethods: r.detection_methods || [],
           status: 'NEW',
           reviewStatus: 'PENDING',
-          triagePriority: r.ensemble_score >= 0.8 ? 'CRITICAL' : r.ensemble_score >= 0.6 ? 'HIGH' : 'MEDIUM',
+          triagePriority: r.triage_priority || (r.atpi >= 75 ? 'CRITICAL' : r.atpi >= 55 ? 'HIGH' : 'MEDIUM'),
         }));
 
         // Insert in batches of 5000 to prevent payload limits
@@ -206,6 +222,10 @@ const getAnomalies = async (req, res, next) => {
       reviewStatus,
       minScore,
       maxScore,
+      maxQValue,
+      minAtpi,
+      peerContextOnly,
+      priority,
       onlyAnomalies = 'true',
       search,
       sortBy = 'ensembleScore',
@@ -243,6 +263,22 @@ const getAnomalies = async (req, res, next) => {
       query.reviewStatus = reviewStatus;
     }
 
+    if (priority) {
+      query.triagePriority = priority;
+    }
+
+    if (peerContextOnly === 'true') {
+      query.peerContextFlag = true;
+    }
+
+    if (maxQValue !== undefined) {
+      query.qValue = { $lte: parseFloat(maxQValue) };
+    }
+
+    if (minAtpi !== undefined) {
+      query.atpi = { $gte: parseFloat(minAtpi) };
+    }
+
     if (minScore !== undefined || maxScore !== undefined) {
       query.ensembleScore = {};
       if (minScore !== undefined) query.ensembleScore.$gte = parseFloat(minScore);
@@ -265,7 +301,28 @@ const getAnomalies = async (req, res, next) => {
     const sortDir = sortOrder === 'asc' ? 1 : -1;
     const sortObj = { [sortBy]: sortDir };
 
-    const [anomalies, total, datasetCounts] = await Promise.all([
+    const pValueBucketsPromise = query.dataset
+      ? AnomalyRecord.aggregate([
+          {
+            $match: {
+              dataset: new mongoose.Types.ObjectId(query.dataset),
+              combinedP: { $exists: true, $ne: null },
+            },
+          },
+          {
+            $bucket: {
+              groupBy: '$combinedP',
+              boundaries: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0001],
+              default: 'other',
+              output: {
+                count: { $sum: 1 },
+              },
+            },
+          },
+        ])
+      : Promise.resolve([]);
+
+    const [anomalies, total, datasetCounts, pValueBuckets] = await Promise.all([
       AnomalyRecord.find(query)
         .populate('dataset', 'name category dataType originalFileName')
         .sort(sortObj)
@@ -280,13 +337,52 @@ const getAnomalies = async (req, res, next) => {
             _id: null,
             totalScanned: { $sum: 1 },
             anomalyCount: { $sum: { $cond: ['$isAnomaly', 1, 0] } },
+            significantFdrCount: { $sum: { $cond: [{ $lte: ['$qValue', 0.05] }, 1, 0] } },
             avgScore: { $avg: '$ensembleScore' },
+            avgAtpi: { $avg: '$atpi' },
           },
         },
       ]),
+      pValueBucketsPromise,
     ]);
 
-    const summary = datasetCounts[0] || { totalScanned: 0, anomalyCount: 0, avgScore: 0 };
+    const summary = datasetCounts[0] || {
+      totalScanned: 0,
+      anomalyCount: 0,
+      significantFdrCount: 0,
+      avgScore: 0,
+      avgAtpi: 0,
+    };
+
+    const binLabels = [
+      '0.0-0.1',
+      '0.1-0.2',
+      '0.2-0.3',
+      '0.3-0.4',
+      '0.4-0.5',
+      '0.5-0.6',
+      '0.6-0.7',
+      '0.7-0.8',
+      '0.8-0.9',
+      '0.9-1.0',
+    ];
+    const binMap = {};
+    binLabels.forEach((label, idx) => {
+      const boundaryStart = Number((idx * 0.1).toFixed(1));
+      binMap[boundaryStart] = { bin: label, count: 0 };
+    });
+    (pValueBuckets || []).forEach((b) => {
+      if (typeof b._id === 'number') {
+        const key = Number(b._id.toFixed(1));
+        if (binMap[key]) {
+          binMap[key].count = b.count;
+        }
+      }
+    });
+    const pValueHistogram = binLabels.map((label, idx) => {
+      const key = Number((idx * 0.1).toFixed(1));
+      return binMap[key];
+    });
 
     return res.status(200).json({
       success: true,
@@ -302,7 +398,10 @@ const getAnomalies = async (req, res, next) => {
         summary: {
           totalScanned: summary.totalScanned,
           anomalyCount: summary.anomalyCount,
+          significantFdrCount: summary.significantFdrCount || 0,
           avgScore: summary.avgScore ? Number(summary.avgScore.toFixed(4)) : 0,
+          avgAtpi: summary.avgAtpi ? Number(summary.avgAtpi.toFixed(2)) : 0,
+          pValueHistogram,
         },
       },
       error: null,

@@ -51,6 +51,10 @@ const RunDetectionModal = ({ isOpen, onClose, dataset, onDetectionComplete }) =>
   const [selectedDetectors, setSelectedDetectors] = useState(['robust_z', 'isolation_forest', 'z_score', 'temporal']);
   const [contamination, setContamination] = useState(0.05);
   const [randomState, setRandomState] = useState(42);
+  const [fusionMethod, setFusionMethod] = useState('acat');
+  const [fdrMethod, setFdrMethod] = useState('bh');
+  const [targetFdr, setTargetFdr] = useState(0.05);
+  const [contaminationTrim, setContaminationTrim] = useState(0.02);
   const [loading, setLoading] = useState(false);
 
   const toggleDetector = (id) => {
@@ -73,6 +77,10 @@ const RunDetectionModal = ({ isOpen, onClose, dataset, onDetectionComplete }) =>
         detectors: selectedDetectors,
         contamination: parseFloat(contamination),
         randomState: parseInt(randomState, 10),
+        fusionMethod,
+        fdrMethod,
+        targetFdr: parseFloat(targetFdr),
+        contaminationTrim: parseFloat(contaminationTrim),
       });
 
       if (res.success) {
@@ -104,7 +112,7 @@ const RunDetectionModal = ({ isOpen, onClose, dataset, onDetectionComplete }) =>
           <div>
             <span className="font-bold">Decision-Support Governance:</span> Results indicate
             statistically unusual patterns requiring human review—not accusations of fraud.
-            All runs are seeded with a deterministic state for IEEE paper reproducibility.
+            All runs are calibrated with split-conformal p-values and seeded for IEEE paper reproducibility.
           </div>
         </div>
 
@@ -145,6 +153,91 @@ const RunDetectionModal = ({ isOpen, onClose, dataset, onDetectionComplete }) =>
                 </div>
               );
             })}
+          </div>
+        </div>
+
+        {/* Statistical Calibration & Multiple Testing (C1, C7) */}
+        <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-700/60 space-y-4">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider flex items-center space-x-1.5">
+              <Sparkles className="w-3.5 h-3.5 text-brand-600" />
+              <span>Conformal Calibration & FDR Control (C1, C7)</span>
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {/* P-Value Fusion Method */}
+            <div>
+              <label className="block text-xs font-medium text-slate-700 dark:text-slate-300 mb-1">
+                P-Value Fusion Method
+              </label>
+              <select
+                value={fusionMethod}
+                onChange={(e) => setFusionMethod(e.target.value)}
+                className="w-full px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs text-slate-900 dark:text-white"
+              >
+                <option value="acat">ACAT (Cauchy Fusion - Recommended)</option>
+                <option value="fisher">Fisher's Combined Probability</option>
+                <option value="stouffer">Stouffer's Z-Score Fusion</option>
+              </select>
+              <span className="text-[10px] text-slate-400">
+                ACAT handles strongly correlated detector outputs
+              </span>
+            </div>
+
+            {/* Multiple Hypothesis FDR Method */}
+            <div>
+              <label className="block text-xs font-medium text-slate-700 dark:text-slate-300 mb-1">
+                FDR Correction Method
+              </label>
+              <select
+                value={fdrMethod}
+                onChange={(e) => setFdrMethod(e.target.value)}
+                className="w-full px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs text-slate-900 dark:text-white"
+              >
+                <option value="bh">Benjamini-Hochberg (BH - Independent/PRDS)</option>
+                <option value="by">Benjamini-Yekutieli (BY - Arbitrary Dependence)</option>
+              </select>
+              <span className="text-[10px] text-slate-400">
+                Controls expected proportion of false alarms
+              </span>
+            </div>
+
+            {/* Target FDR Alpha Slider */}
+            <div>
+              <div className="flex items-center justify-between text-xs font-medium text-slate-700 dark:text-slate-300 mb-1">
+                <span>Target FDR Threshold ($\alpha$)</span>
+                <span className="font-mono text-brand-600 font-bold">{(targetFdr * 100).toFixed(0)}%</span>
+              </div>
+              <input
+                type="range"
+                min="0.01"
+                max="0.20"
+                step="0.01"
+                value={targetFdr}
+                onChange={(e) => setTargetFdr(parseFloat(e.target.value))}
+                className="w-full h-1.5 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-brand-600"
+              />
+              <span className="text-[10px] text-slate-400">Flagged records have q-value &le; &alpha;</span>
+            </div>
+
+            {/* Calibration Contamination Trimming */}
+            <div>
+              <div className="flex items-center justify-between text-xs font-medium text-slate-700 dark:text-slate-300 mb-1">
+                <span>Contamination Trim (&nu;<sub>trim</sub>)</span>
+                <span className="font-mono text-brand-600 font-bold">{(contaminationTrim * 100).toFixed(0)}%</span>
+              </div>
+              <input
+                type="range"
+                min="0.00"
+                max="0.05"
+                step="0.01"
+                value={contaminationTrim}
+                onChange={(e) => setContaminationTrim(parseFloat(e.target.value))}
+                className="w-full h-1.5 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-brand-600"
+              />
+              <span className="text-[10px] text-slate-400">Trims extreme scores from calibration pool</span>
+            </div>
           </div>
         </div>
 

@@ -12,6 +12,8 @@ import {
   Sparkles,
   BarChart2,
   FileText,
+  Scale,
+  ShieldAlert,
 } from 'lucide-react';
 import StatusBadge from './StatusBadge';
 import { anomalyService } from '../services/anomalyService';
@@ -60,8 +62,16 @@ const AnomalyDetailDrawer = ({ isOpen, onClose, anomaly, onRecordUpdated }) => {
 
   const ensembleScore = anomaly.ensembleScore ?? 0;
   const detectorScores = anomaly.detectorScores || {};
+  const detectorPValues = anomaly.detectorPValues || {};
   const detectorFlags = anomaly.detectorFlags || {};
   const recordData = anomaly.recordData || {};
+  const atpi = anomaly.atpi ?? 0;
+  const atpiBreakdown = anomaly.atpiBreakdown || {};
+  const priority =
+    anomaly.priority ||
+    (atpi >= 75 ? 'CRITICAL' : atpi >= 55 ? 'HIGH' : atpi >= 35 ? 'MEDIUM' : 'LOW');
+  const combinedP = anomaly.combinedP !== undefined && anomaly.combinedP !== null ? anomaly.combinedP : null;
+  const qValue = anomaly.qValue !== undefined && anomaly.qValue !== null ? anomaly.qValue : null;
 
   return (
     <div className="fixed inset-0 z-50 overflow-hidden bg-slate-900/60 backdrop-blur-xs flex justify-end">
@@ -94,37 +104,196 @@ const AnomalyDetailDrawer = ({ isOpen, onClose, anomaly, onRecordUpdated }) => {
 
         {/* Content Body */}
         <div className="flex-1 overflow-y-auto p-6 space-y-6">
-          {/* Ensemble Score & Triage Card */}
-          <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 flex items-center justify-between">
-            <div>
-              <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">
-                Consensus Anomaly Score
-              </span>
-              <div className="text-3xl font-extrabold text-slate-900 dark:text-white mt-1">
-                {(ensembleScore * 100).toFixed(1)}%
+          {/* ATPI Priority & Triage Card (C7) */}
+          <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 space-y-3">
+            <div className="flex items-center justify-between">
+              <div>
+                <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider flex items-center space-x-1.5">
+                  <Layers className="w-3.5 h-3.5 text-brand-600" />
+                  <span>Anomaly Triage Priority Index (C7 ATPI)</span>
+                </span>
+                <div className="flex items-baseline space-x-2 mt-1">
+                  <span className="text-3xl font-extrabold text-slate-900 dark:text-white font-mono">
+                    {atpi.toFixed(1)}
+                  </span>
+                  <span className="text-xs text-slate-400 font-medium">/ 100</span>
+                </div>
               </div>
-              <div className="text-xs text-slate-500 mt-0.5">
-                Weighted combination across active statistical & ML detectors
+
+              <div className="text-right">
+                <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">
+                  Triage Priority
+                </span>
+                <span
+                  className={`inline-block px-3 py-1 rounded-full text-xs font-bold ${
+                    priority === 'CRITICAL'
+                      ? 'bg-rose-100 text-rose-700 dark:bg-rose-950/80 dark:text-rose-300 border border-rose-200 dark:border-rose-800'
+                      : priority === 'HIGH'
+                      ? 'bg-amber-100 text-amber-700 dark:bg-amber-950/80 dark:text-amber-300 border border-amber-200 dark:border-amber-800'
+                      : priority === 'MEDIUM'
+                      ? 'bg-blue-100 text-blue-700 dark:bg-blue-950/80 dark:text-blue-300 border border-blue-200 dark:border-blue-800'
+                      : 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300'
+                  }`}
+                >
+                  {priority}
+                </span>
               </div>
             </div>
 
-            <div className="text-right">
-              <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">
-                Triage Priority
-              </span>
-              <span
-                className={`inline-block px-3 py-1 rounded-full text-xs font-bold ${
-                  ensembleScore >= 0.8
-                    ? 'bg-rose-100 text-rose-700 dark:bg-rose-950/80 dark:text-rose-300 border border-rose-200 dark:border-rose-800'
-                    : ensembleScore >= 0.5
-                    ? 'bg-amber-100 text-amber-700 dark:bg-amber-950/80 dark:text-amber-300 border border-amber-200 dark:border-amber-800'
-                    : 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300'
-                }`}
-              >
-                {anomaly.triagePriority || (ensembleScore >= 0.8 ? 'CRITICAL' : 'MEDIUM')}
-              </span>
+            {/* ATPI Dimension Contribution Bars */}
+            <div className="space-y-2 pt-2 border-t border-slate-200 dark:border-slate-700/50">
+              <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+                Index Dimension Breakdown
+              </div>
+              <div className="grid grid-cols-2 gap-2 text-xs">
+                {/* Statistical Confidence */}
+                <div className="p-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                  <div className="flex justify-between text-[11px] text-slate-500 mb-1">
+                    <span>Confidence (1 - q)</span>
+                    <span className="font-mono font-bold text-brand-600">
+                      {atpiBreakdown.statistical_confidence
+                        ? (atpiBreakdown.statistical_confidence * 100).toFixed(0)
+                        : (qValue !== null ? ((1 - qValue) * 100).toFixed(0) : '—')}
+                      %
+                    </span>
+                  </div>
+                  <div className="w-full h-1.5 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-brand-500 rounded-full"
+                      style={{
+                        width: `${Math.min(
+                          100,
+                          atpiBreakdown.statistical_confidence
+                            ? atpiBreakdown.statistical_confidence * 100
+                            : qValue !== null
+                            ? (1 - qValue) * 100
+                            : 0
+                        )}%`,
+                      }}
+                    />
+                  </div>
+                </div>
+
+                {/* Effect Size Score */}
+                <div className="p-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                  <div className="flex justify-between text-[11px] text-slate-500 mb-1">
+                    <span>Effect Size (MAD)</span>
+                    <span className="font-mono font-bold text-purple-600">
+                      {atpiBreakdown.effect_size_score
+                        ? (atpiBreakdown.effect_size_score * 100).toFixed(0)
+                        : (ensembleScore * 100).toFixed(0)}
+                      %
+                    </span>
+                  </div>
+                  <div className="w-full h-1.5 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-purple-500 rounded-full"
+                      style={{
+                        width: `${Math.min(
+                          100,
+                          atpiBreakdown.effect_size_score
+                            ? atpiBreakdown.effect_size_score * 100
+                            : ensembleScore * 100
+                        )}%`,
+                      }}
+                    />
+                  </div>
+                </div>
+
+                {/* Peer Context Score */}
+                <div className="p-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                  <div className="flex justify-between text-[11px] text-slate-500 mb-1">
+                    <span>Peer Discrepancy</span>
+                    <span className="font-mono font-bold text-amber-600">
+                      {anomaly.peerContextFlag ? 'ACTIVE (1.0)' : 'NOMINAL (0.0)'}
+                    </span>
+                  </div>
+                  <div className="w-full h-1.5 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+                    <div
+                      className={`h-full rounded-full ${anomaly.peerContextFlag ? 'bg-amber-500 w-full' : 'bg-slate-300 w-0'}`}
+                    />
+                  </div>
+                </div>
+
+                {/* Population Impact */}
+                <div className="p-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                  <div className="flex justify-between text-[11px] text-slate-500 mb-1">
+                    <span>Population Impact</span>
+                    <span className="font-mono font-bold text-emerald-600">
+                      {atpiBreakdown.population_impact_score
+                        ? (atpiBreakdown.population_impact_score * 100).toFixed(0)
+                        : '50'}
+                      %
+                    </span>
+                  </div>
+                  <div className="w-full h-1.5 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-emerald-500 rounded-full"
+                      style={{
+                        width: `${Math.min(
+                          100,
+                          atpiBreakdown.population_impact_score
+                            ? atpiBreakdown.population_impact_score * 100
+                            : 50
+                        )}%`,
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
+          {/* Conformal Calibration & Multiple Testing (C1) */}
+          <div className="p-4 rounded-2xl bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 space-y-3">
+            <span className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center space-x-1.5">
+              <Scale className="w-4 h-4 text-brand-600" />
+              <span>Conformal Calibration & Multiple Testing (C1 ACAT)</span>
+            </span>
+
+            <div className="grid grid-cols-2 gap-3 text-xs">
+              <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-750">
+                <div className="text-[11px] text-slate-500">ACAT Combined P-Value</div>
+                <div className="text-lg font-mono font-bold text-slate-900 dark:text-white mt-1">
+                  {combinedP !== null ? (combinedP < 0.001 ? '<0.001' : combinedP.toFixed(4)) : '—'}
+                </div>
+                <div className="text-[10px] text-slate-400 mt-0.5">Heavy-tailed Cauchy fusion</div>
+              </div>
+
+              <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-750">
+                <div className="text-[11px] text-slate-500">FDR Q-Value (BH Step-Up)</div>
+                <div className="flex items-center space-x-2 mt-1">
+                  <span
+                    className={`text-lg font-mono font-bold ${
+                      qValue !== null && qValue <= 0.05
+                        ? 'text-emerald-600 dark:text-emerald-400'
+                        : 'text-slate-900 dark:text-white'
+                    }`}
+                  >
+                    {qValue !== null ? (qValue < 0.001 ? '<0.001' : qValue.toFixed(4)) : '—'}
+                  </span>
+                  {qValue !== null && qValue <= 0.05 && (
+                    <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-100 dark:bg-emerald-950/70 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800">
+                      FDR &le; 5%
+                    </span>
+                  )}
+                </div>
+                <div className="text-[10px] text-slate-400 mt-0.5">Multiple hypothesis adjusted</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Peer Context Discrepancy Alert */}
+          {anomaly.peerContextFlag && (
+            <div className="p-3.5 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/40 border border-indigo-200/70 dark:border-indigo-800/60 text-xs text-indigo-900 dark:text-indigo-300 flex items-start space-x-2.5">
+              <ShieldAlert className="w-4 h-4 text-indigo-600 mt-0.5 shrink-0" />
+              <div>
+                <span className="font-bold">Peer Context Discrepancy:</span> This record is statistically
+                unusual specifically in the context of its local peer group baseline, demonstrating the value
+                of hierarchy-aware Empirical Bayes shrinkage over uniform global thresholds.
+              </div>
+            </div>
+          )}
 
           {/* Anomaly Tags / Flags */}
           {anomaly.flags && anomaly.flags.length > 0 && (
@@ -149,7 +318,7 @@ const AnomalyDetailDrawer = ({ isOpen, onClose, anomaly, onRecordUpdated }) => {
           {/* Individual Detector Score Breakdown */}
           <div className="space-y-3">
             <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
-              Detector Score Breakdown
+              Detector Score & Conformal P-Value Breakdown
             </span>
             <div className="grid grid-cols-2 gap-3">
               {/* Robust Z */}
@@ -163,8 +332,15 @@ const AnomalyDetailDrawer = ({ isOpen, onClose, anomaly, onRecordUpdated }) => {
                     {detectorFlags.robust_z ? 'FLAGGED' : 'NORMAL'}
                   </span>
                 </div>
-                <div className="text-xl font-bold text-slate-900 dark:text-white mt-1">
-                  {detectorScores.robust_z !== undefined ? detectorScores.robust_z.toFixed(2) : '—'}
+                <div className="flex items-baseline space-x-2 mt-1">
+                  <span className="text-xl font-bold text-slate-900 dark:text-white">
+                    {detectorScores.robust_z !== undefined ? detectorScores.robust_z.toFixed(2) : '—'}
+                  </span>
+                  {detectorPValues.robust_z !== undefined && (
+                    <span className="text-[11px] font-mono text-slate-400">
+                      p={detectorPValues.robust_z.toFixed(3)}
+                    </span>
+                  )}
                 </div>
                 <div className="text-[10px] text-slate-400">Threshold: &gt; 3.5 MAD</div>
               </div>
@@ -180,8 +356,17 @@ const AnomalyDetailDrawer = ({ isOpen, onClose, anomaly, onRecordUpdated }) => {
                     {detectorFlags.isolation_forest ? 'FLAGGED' : 'NORMAL'}
                   </span>
                 </div>
-                <div className="text-xl font-bold text-slate-900 dark:text-white mt-1">
-                  {detectorScores.isolation_forest !== undefined ? detectorScores.isolation_forest.toFixed(2) : '—'}
+                <div className="flex items-baseline space-x-2 mt-1">
+                  <span className="text-xl font-bold text-slate-900 dark:text-white">
+                    {detectorScores.isolation_forest !== undefined
+                      ? detectorScores.isolation_forest.toFixed(2)
+                      : '—'}
+                  </span>
+                  {detectorPValues.isolation_forest !== undefined && (
+                    <span className="text-[11px] font-mono text-slate-400">
+                      p={detectorPValues.isolation_forest.toFixed(3)}
+                    </span>
+                  )}
                 </div>
                 <div className="text-[10px] text-slate-400">Multivariate Tree Path Metric</div>
               </div>
@@ -197,8 +382,15 @@ const AnomalyDetailDrawer = ({ isOpen, onClose, anomaly, onRecordUpdated }) => {
                     {detectorFlags.z_score ? 'FLAGGED' : 'NORMAL'}
                   </span>
                 </div>
-                <div className="text-xl font-bold text-slate-900 dark:text-white mt-1">
-                  {detectorScores.z_score !== undefined ? detectorScores.z_score.toFixed(2) : '—'}
+                <div className="flex items-baseline space-x-2 mt-1">
+                  <span className="text-xl font-bold text-slate-900 dark:text-white">
+                    {detectorScores.z_score !== undefined ? detectorScores.z_score.toFixed(2) : '—'}
+                  </span>
+                  {detectorPValues.z_score !== undefined && (
+                    <span className="text-[11px] font-mono text-slate-400">
+                      p={detectorPValues.z_score.toFixed(3)}
+                    </span>
+                  )}
                 </div>
                 <div className="text-[10px] text-slate-400">Threshold: &gt; 3.0 \sigma</div>
               </div>
@@ -214,8 +406,15 @@ const AnomalyDetailDrawer = ({ isOpen, onClose, anomaly, onRecordUpdated }) => {
                     {detectorFlags.temporal ? 'FLAGGED' : 'NORMAL'}
                   </span>
                 </div>
-                <div className="text-xl font-bold text-slate-900 dark:text-white mt-1">
-                  {detectorScores.temporal !== undefined ? detectorScores.temporal.toFixed(2) : 'N/A'}
+                <div className="flex items-baseline space-x-2 mt-1">
+                  <span className="text-xl font-bold text-slate-900 dark:text-white">
+                    {detectorScores.temporal !== undefined ? detectorScores.temporal.toFixed(2) : 'N/A'}
+                  </span>
+                  {detectorPValues.temporal !== undefined && (
+                    <span className="text-[11px] font-mono text-slate-400">
+                      p={detectorPValues.temporal.toFixed(3)}
+                    </span>
+                  )}
                 </div>
                 <div className="text-[10px] text-slate-400">STL & Drift Residuals</div>
               </div>

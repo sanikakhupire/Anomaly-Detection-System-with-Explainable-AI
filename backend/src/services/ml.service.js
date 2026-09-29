@@ -116,6 +116,10 @@ const analyzeDataset = async ({
   contamination = 0.05,
   randomState = 42,
   maxRecords = null,
+  fusionMethod = 'acat',
+  fdrMethod = 'bh',
+  targetFdr = 0.05,
+  contaminationTrim = 0.02,
 }) => {
   try {
     const response = await mlClient.post('/ml/analyze', {
@@ -128,6 +132,10 @@ const analyzeDataset = async ({
       contamination,
       random_state: randomState,
       max_records: maxRecords,
+      fusion_method: fusionMethod,
+      fdr_method: fdrMethod,
+      target_fdr: targetFdr,
+      contamination_trim: contaminationTrim,
     });
     if (response.data && response.data.success) {
       return response.data.data;
