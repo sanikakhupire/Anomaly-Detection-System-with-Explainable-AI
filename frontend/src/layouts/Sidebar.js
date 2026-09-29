@@ -12,6 +12,8 @@ import {
   ChevronRight,
   Layers,
   Users,
+  FileSearch,
+  GitMerge,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import StatusBadge from '../components/StatusBadge';
@@ -21,6 +23,8 @@ const navigationItems = [
   { name: 'Datasets', path: '/datasets', icon: Database },
   { name: 'Features', path: '/features', icon: Layers },
   { name: 'Peer Groups', path: '/peer-groups', icon: Users },
+  { name: 'Forensics (C3)', path: '/forensics', icon: FileSearch },
+  { name: 'Data Fusion', path: '/fusion', icon: GitMerge },
   { name: 'Anomalies', path: '/anomalies', icon: AlertCircle },
   { name: 'Review Queue', path: '/reviews', icon: CheckSquare },
   { name: 'Model & Config', path: '/models', icon: Cpu },

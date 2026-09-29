@@ -19,6 +19,8 @@ import SettingsPage from './pages/SettingsPage';
 import ProfilePage from './pages/ProfilePage';
 import FeaturesPage from './pages/FeaturesPage';
 import PeerGroupsPage from './pages/PeerGroupsPage';
+import ForensicsPage from './pages/ForensicsPage';
+import FusionPage from './pages/FusionPage';
 
 function App() {
   return (
@@ -45,6 +47,8 @@ function App() {
                 <Route path="datasets/:id" element={<DatasetDetailPage />} />
                 <Route path="features" element={<FeaturesPage />} />
                 <Route path="peer-groups" element={<PeerGroupsPage />} />
+                <Route path="forensics" element={<ForensicsPage />} />
+                <Route path="fusion" element={<FusionPage />} />
                 <Route path="anomalies" element={<AnomaliesPage />} />
                 <Route path="reviews" element={<ReviewsPage />} />
                 <Route path="models" element={<ModelsPage />} />

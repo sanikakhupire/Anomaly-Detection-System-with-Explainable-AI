@@ -5,7 +5,14 @@ const processingJobSchema = new mongoose.Schema(
     type: {
       type: String,
       required: true,
-      enum: ['DATASET_PROFILING', 'FEATURE_ENGINEERING', 'ANOMALY_DETECTION', 'VALIDATION_PIPELINE'],
+      enum: [
+        'DATASET_PROFILING',
+        'FEATURE_ENGINEERING',
+        'ANOMALY_DETECTION',
+        'VALIDATION_PIPELINE',
+        'FORENSIC_ANALYSIS',
+        'DATA_FUSION',
+      ],
       default: 'DATASET_PROFILING',
       index: true,
     },

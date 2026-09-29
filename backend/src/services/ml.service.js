@@ -148,10 +148,33 @@ const analyzeDataset = async ({
   }
 };
 
+/**
+ * Executes forensic test battery (Benford, digit heaping, last-digit uniformity, etc.) on dataset.
+ */
+const analyzeForensics = async ({ filePath, columns = null, testNames = null }) => {
+  try {
+    const response = await mlClient.post('/ml/forensics/analyze', {
+      file_path: filePath,
+      columns,
+      test_names: testNames,
+    });
+    if (response.data && response.data.success) {
+      return response.data.data;
+    }
+    throw new Error('ML forensics analysis returned unexpected format');
+  } catch (error) {
+    const errorDetail =
+      error.response?.data?.detail || error.response?.data?.message || error.message;
+    throw new Error(`ML Forensics Analysis Error: ${errorDetail}`);
+  }
+};
+
 module.exports = {
   requestProfiling,
   inferSchemaMapping,
   runFeatureEngineering,
   buildPeerGroups,
   analyzeDataset,
+  analyzeForensics,
 };
+
