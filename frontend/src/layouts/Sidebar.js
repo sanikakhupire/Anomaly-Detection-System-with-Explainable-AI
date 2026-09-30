@@ -14,6 +14,7 @@ import {
   Users,
   FileSearch,
   GitMerge,
+  Sparkles,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import StatusBadge from '../components/StatusBadge';
@@ -26,6 +27,7 @@ const navigationItems = [
   { name: 'Forensics (C3)', path: '/forensics', icon: FileSearch },
   { name: 'Data Fusion', path: '/fusion', icon: GitMerge },
   { name: 'Anomalies', path: '/anomalies', icon: AlertCircle },
+  { name: 'Explainability (C4)', path: '/explainability', icon: Sparkles },
   { name: 'Review Queue', path: '/reviews', icon: CheckSquare },
   { name: 'Model & Config', path: '/models', icon: Cpu },
   { name: 'Reports & Audits', path: '/reports', icon: FileText },

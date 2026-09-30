@@ -13,6 +13,7 @@ const peerGroupRoutes = require('./routes/peerGroup.routes');
 const anomalyRoutes = require('./routes/anomaly.routes');
 const forensicRoutes = require('./routes/forensic.routes');
 const fusionRoutes = require('./routes/fusion.routes');
+const explainabilityRoutes = require('./routes/explainability.routes');
 
 const app = express();
 
@@ -93,6 +94,7 @@ app.use('/api/peer-groups', peerGroupRoutes);
 app.use('/api/anomalies', anomalyRoutes);
 app.use('/api/forensics', forensicRoutes);
 app.use('/api/fusion', fusionRoutes);
+app.use('/api/explanations', explainabilityRoutes);
 
 // 404 Handler for undefined routes
 app.use((req, res) => {

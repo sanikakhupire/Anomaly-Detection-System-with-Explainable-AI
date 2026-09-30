@@ -169,6 +169,74 @@ const analyzeForensics = async ({ filePath, columns = null, testNames = null }) 
   }
 };
 
+/**
+ * Generates local SHAP, DIFFI, perturbation baseline, and counterfactuals for an anomaly.
+ */
+const explainAnomaly = async ({
+  filePath,
+  recordIndex,
+  recordData,
+  featureCols,
+  peerBaselines = null,
+  dataHash = 'data_hash',
+  configHash = 'config_hash',
+  topK = 4,
+}) => {
+  try {
+    const response = await mlClient.post('/ml/explain', {
+      file_path: filePath,
+      record_index: recordIndex,
+      record_data: recordData,
+      feature_cols: featureCols,
+      peer_baselines: peerBaselines,
+      data_hash: dataHash,
+      config_hash: configHash,
+      top_k: topK,
+    });
+    if (response.data && response.data.success) {
+      return response.data.data;
+    }
+    throw new Error('ML explainability returned unexpected format');
+  } catch (error) {
+    const errorDetail =
+      error.response?.data?.detail || error.response?.data?.message || error.message;
+    throw new Error(`ML Explainability Error: ${errorDetail}`);
+  }
+};
+
+/**
+ * Generates batch explanations and computes dataset-wide faithfulness and stability metrics.
+ */
+const explainBatchAnomalies = async ({
+  filePath,
+  anomalies,
+  featureCols,
+  peerBaselines = null,
+  dataHash = 'data_hash',
+  configHash = 'config_hash',
+  topK = 4,
+}) => {
+  try {
+    const response = await mlClient.post('/ml/explain/batch', {
+      file_path: filePath,
+      anomalies,
+      feature_cols: featureCols,
+      peer_baselines: peerBaselines,
+      data_hash: dataHash,
+      config_hash: configHash,
+      top_k: topK,
+    });
+    if (response.data && response.data.success) {
+      return response.data.data;
+    }
+    throw new Error('ML batch explainability returned unexpected format');
+  } catch (error) {
+    const errorDetail =
+      error.response?.data?.detail || error.response?.data?.message || error.message;
+    throw new Error(`ML Batch Explainability Error: ${errorDetail}`);
+  }
+};
+
 module.exports = {
   requestProfiling,
   inferSchemaMapping,
@@ -176,5 +244,8 @@ module.exports = {
   buildPeerGroups,
   analyzeDataset,
   analyzeForensics,
+  explainAnomaly,
+  explainBatchAnomalies,
 };
+
 

@@ -44,6 +44,7 @@ from app.api.features import router as features_router
 from app.api.peer_groups import router as peer_groups_router
 from app.api.anomaly_detection import router as anomaly_detection_router
 from app.api.forensics import router as forensics_router
+from app.api.explainability import router as explainability_router
 
 app.include_router(profile_router)
 app.include_router(schema_mapping_router)
@@ -51,6 +52,7 @@ app.include_router(features_router)
 app.include_router(peer_groups_router)
 app.include_router(anomaly_detection_router)
 app.include_router(forensics_router)
+app.include_router(explainability_router)
 
 
 

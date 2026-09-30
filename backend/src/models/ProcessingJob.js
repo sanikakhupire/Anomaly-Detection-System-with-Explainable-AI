@@ -12,6 +12,7 @@ const processingJobSchema = new mongoose.Schema(
         'VALIDATION_PIPELINE',
         'FORENSIC_ANALYSIS',
         'DATA_FUSION',
+        'EXPLANATION_GENERATION',
       ],
       default: 'DATASET_PROFILING',
       index: true,

@@ -21,6 +21,7 @@ import FeaturesPage from './pages/FeaturesPage';
 import PeerGroupsPage from './pages/PeerGroupsPage';
 import ForensicsPage from './pages/ForensicsPage';
 import FusionPage from './pages/FusionPage';
+import ExplainabilityPage from './pages/ExplainabilityPage';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
                 <Route path="forensics" element={<ForensicsPage />} />
                 <Route path="fusion" element={<FusionPage />} />
                 <Route path="anomalies" element={<AnomaliesPage />} />
+                <Route path="explainability" element={<ExplainabilityPage />} />
                 <Route path="reviews" element={<ReviewsPage />} />
                 <Route path="models" element={<ModelsPage />} />
                 <Route path="reports" element={<ReportsPage />} />
