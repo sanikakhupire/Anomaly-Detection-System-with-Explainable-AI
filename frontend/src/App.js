@@ -22,6 +22,7 @@ import PeerGroupsPage from './pages/PeerGroupsPage';
 import ForensicsPage from './pages/ForensicsPage';
 import FusionPage from './pages/FusionPage';
 import ExplainabilityPage from './pages/ExplainabilityPage';
+import LabPage from './pages/LabPage';
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
                 <Route path="reviews" element={<ReviewsPage />} />
                 <Route path="models" element={<ModelsPage />} />
                 <Route path="reports" element={<ReportsPage />} />
+                <Route path="lab" element={<LabPage />} />
                 <Route path="settings" element={<SettingsPage />} />
                 <Route path="profile" element={<ProfilePage />} />
               </Route>

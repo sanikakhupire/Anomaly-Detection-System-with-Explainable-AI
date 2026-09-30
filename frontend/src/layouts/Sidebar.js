@@ -15,6 +15,7 @@ import {
   FileSearch,
   GitMerge,
   Sparkles,
+  FlaskConical,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import StatusBadge from '../components/StatusBadge';
@@ -31,6 +32,7 @@ const navigationItems = [
   { name: 'Review Queue', path: '/reviews', icon: CheckSquare },
   { name: 'Model & Config', path: '/models', icon: Cpu },
   { name: 'Reports & Audits', path: '/reports', icon: FileText },
+  { name: 'Experiment Lab (C9)', path: '/lab', icon: FlaskConical },
   { name: 'Settings', path: '/settings', icon: Settings },
 ];
 

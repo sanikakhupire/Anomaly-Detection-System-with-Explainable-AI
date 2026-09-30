@@ -279,6 +279,34 @@ const updateDetectorWeights = async (payload) => {
   }
 };
 
+/**
+ * Runs reproducible benchmark suite across baselines, ablations, and significance tests (C9).
+ */
+const runBenchmark = async (payload) => {
+  try {
+    const response = await mlClient.post('/ml/experiments/run-benchmark', payload);
+    return response.data;
+  } catch (error) {
+    const errorDetail =
+      error.response?.data?.detail || error.response?.data?.message || error.message;
+    throw new Error(`ML Benchmark Error: ${errorDetail}`);
+  }
+};
+
+/**
+ * Generates publication-ready LaTeX tables for experiment results (C9).
+ */
+const exportLatex = async (payload) => {
+  try {
+    const response = await mlClient.post('/ml/experiments/export-latex', payload);
+    return response.data;
+  } catch (error) {
+    const errorDetail =
+      error.response?.data?.detail || error.response?.data?.message || error.message;
+    throw new Error(`ML LaTeX Export Error: ${errorDetail}`);
+  }
+};
+
 module.exports = {
   requestProfiling,
   inferSchemaMapping,
@@ -291,6 +319,8 @@ module.exports = {
   validateAnomaly,
   validateBatchAnomalies,
   updateDetectorWeights,
+  runBenchmark,
+  exportLatex,
 };
 
 

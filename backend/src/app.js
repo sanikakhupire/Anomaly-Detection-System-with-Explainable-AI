@@ -17,6 +17,7 @@ const explainabilityRoutes = require('./routes/explainability.routes');
 const validationRoutes = require('./routes/validation.routes');
 const modelConfigRoutes = require('./routes/modelConfig.routes');
 const reportRoutes = require('./routes/report.routes');
+const experimentRoutes = require('./routes/experiment.routes');
 
 const app = express();
 
@@ -101,6 +102,7 @@ app.use('/api/explanations', explainabilityRoutes);
 app.use('/api/validations', validationRoutes);
 app.use('/api/models', modelConfigRoutes);
 app.use('/api/reports', reportRoutes);
+app.use('/api/experiments', experimentRoutes);
 
 // 404 Handler for undefined routes
 app.use((req, res) => {
