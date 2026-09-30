@@ -14,6 +14,7 @@ const anomalyRoutes = require('./routes/anomaly.routes');
 const forensicRoutes = require('./routes/forensic.routes');
 const fusionRoutes = require('./routes/fusion.routes');
 const explainabilityRoutes = require('./routes/explainability.routes');
+const validationRoutes = require('./routes/validation.routes');
 
 const app = express();
 
@@ -95,6 +96,7 @@ app.use('/api/anomalies', anomalyRoutes);
 app.use('/api/forensics', forensicRoutes);
 app.use('/api/fusion', fusionRoutes);
 app.use('/api/explanations', explainabilityRoutes);
+app.use('/api/validations', validationRoutes);
 
 // 404 Handler for undefined routes
 app.use((req, res) => {

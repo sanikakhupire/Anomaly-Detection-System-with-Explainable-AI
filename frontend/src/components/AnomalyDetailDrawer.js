@@ -643,6 +643,39 @@ const AnomalyDetailDrawer = ({ isOpen, onClose, anomaly, onRecordUpdated }) => {
                   <span>Human-in-the-Loop Review & Governance</span>
                 </span>
 
+                {/* Multi-Agent Validation Status if available */}
+                {anomaly.validationVerdict && (
+                  <div className="p-3 rounded-xl bg-indigo-50/60 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-900/60 space-y-2">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="font-bold flex items-center space-x-1.5 text-indigo-950 dark:text-indigo-200">
+                        <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
+                        <span>Multi-Agent Validation (C5):</span>
+                      </span>
+                      <span className="font-bold px-2 py-0.5 rounded text-[10px] bg-white dark:bg-slate-800 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
+                        {anomaly.validationVerdict.replace(/_/g, ' ')}
+                      </span>
+                    </div>
+                    <div className="grid grid-cols-2 gap-2 text-[11px] text-slate-600 dark:text-slate-300">
+                      <div>
+                        Consensus Confidence:{' '}
+                        <strong className="font-mono text-slate-900 dark:text-white">
+                          {anomaly.validationConfidence !== null && anomaly.validationConfidence !== undefined
+                            ? `${(anomaly.validationConfidence * 100).toFixed(0)}%`
+                            : '—'}
+                        </strong>
+                      </div>
+                      <div>
+                        Claim Verification Ratio:{' '}
+                        <strong className="font-mono text-emerald-600 dark:text-emerald-400">
+                          {anomaly.claimVerificationRatio !== null && anomaly.claimVerificationRatio !== undefined
+                            ? `${(anomaly.claimVerificationRatio * 100).toFixed(0)}%`
+                            : '—'}
+                        </strong>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {/* Investigation Status */}
                   <div>

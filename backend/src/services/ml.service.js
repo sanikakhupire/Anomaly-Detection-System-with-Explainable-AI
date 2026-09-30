@@ -237,6 +237,34 @@ const explainBatchAnomalies = async ({
   }
 };
 
+/**
+ * Validates a single anomaly record using Grounded Multi-Agent Validation (C5).
+ */
+const validateAnomaly = async (payload) => {
+  try {
+    const response = await mlClient.post('/ml/validate', payload);
+    return response.data;
+  } catch (error) {
+    const errorDetail =
+      error.response?.data?.detail || error.response?.data?.message || error.message;
+    throw new Error(`ML Multi-Agent Validation Error: ${errorDetail}`);
+  }
+};
+
+/**
+ * Validates a batch of anomaly records.
+ */
+const validateBatchAnomalies = async (items) => {
+  try {
+    const response = await mlClient.post('/ml/validate/batch', items);
+    return response.data;
+  } catch (error) {
+    const errorDetail =
+      error.response?.data?.detail || error.response?.data?.message || error.message;
+    throw new Error(`ML Batch Validation Error: ${errorDetail}`);
+  }
+};
+
 module.exports = {
   requestProfiling,
   inferSchemaMapping,
@@ -246,6 +274,8 @@ module.exports = {
   analyzeForensics,
   explainAnomaly,
   explainBatchAnomalies,
+  validateAnomaly,
+  validateBatchAnomalies,
 };
 
 

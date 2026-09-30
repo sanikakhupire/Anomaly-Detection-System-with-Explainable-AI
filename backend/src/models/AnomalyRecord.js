@@ -106,6 +106,31 @@ const anomalyRecordSchema = new mongoose.Schema(
       default: 'MEDIUM',
       index: true,
     },
+    validationVerdict: {
+      type: String,
+      enum: [
+        'CONFIRMED_ANOMALY',
+        'DATA_QUALITY_ARTIFACT',
+        'BENIGN_EXTREME_VARIATION',
+        'INSUFFICIENT_EVIDENCE',
+        null,
+      ],
+      default: null,
+      index: true,
+    },
+    validationConfidence: {
+      type: Number,
+      default: null,
+    },
+    claimVerificationRatio: {
+      type: Number,
+      default: null,
+    },
+    validationReport: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'ValidationReport',
+      default: null,
+    },
     notes: {
       type: [
         {
