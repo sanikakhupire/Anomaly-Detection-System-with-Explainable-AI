@@ -265,6 +265,20 @@ const validateBatchAnomalies = async (items) => {
   }
 };
 
+/**
+ * Computes updated detector weights using Exponentiated Gradient descent on human feedback (C6).
+ */
+const updateDetectorWeights = async (payload) => {
+  try {
+    const response = await mlClient.post('/ml/weights/update', payload);
+    return response.data;
+  } catch (error) {
+    const errorDetail =
+      error.response?.data?.detail || error.response?.data?.message || error.message;
+    throw new Error(`ML Adaptive Weighting Error: ${errorDetail}`);
+  }
+};
+
 module.exports = {
   requestProfiling,
   inferSchemaMapping,
@@ -276,6 +290,7 @@ module.exports = {
   explainBatchAnomalies,
   validateAnomaly,
   validateBatchAnomalies,
+  updateDetectorWeights,
 };
 
 

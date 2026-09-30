@@ -25,6 +25,7 @@ class AnalyzeRequest(BaseModel):
     fdr_method: str = Field("bh", description="Multiple testing correction: 'bh' (Benjamini-Hochberg) or 'by' (Benjamini-Yekutieli)")
     target_fdr: float = Field(0.05, ge=0.001, le=0.5, description="Nominal False Discovery Rate control level")
     contamination_trim: float = Field(0.02, ge=0.0, le=0.2, description="Calibration set contamination trimming quantile")
+    detector_weights: Optional[Dict[str, float]] = Field(None, description="Learned adaptive detector weights")
 
 
 @router.post("/analyze")
@@ -47,6 +48,7 @@ def analyze_dataset_anomalies(payload: AnalyzeRequest):
             fdr_method=payload.fdr_method,
             target_fdr=payload.target_fdr,
             contamination_trim=payload.contamination_trim,
+            detector_weights=payload.detector_weights,
         )
         return {
             "success": True,

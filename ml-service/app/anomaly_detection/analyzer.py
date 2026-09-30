@@ -37,6 +37,7 @@ def run_anomaly_analysis(
     fdr_method: str = "bh",
     target_fdr: float = 0.05,
     contamination_trim: float = 0.02,
+    detector_weights: Optional[Dict[str, float]] = None,
 ) -> Dict[str, Any]:
     """
     Execute statistical and machine-learning detectors on dataset.
@@ -103,6 +104,10 @@ def run_anomaly_analysis(
         "z_score": 0.15,
         "temporal": 0.10,
     }
+    if detector_weights:
+        for k, v in detector_weights.items():
+            if k in weights_dict and v is not None:
+                weights_dict[k] = float(v)
 
     active_detectors = []
 

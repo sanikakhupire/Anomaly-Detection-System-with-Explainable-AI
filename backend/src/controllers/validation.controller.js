@@ -424,6 +424,14 @@ const submitHumanReview = async (req, res) => {
       },
     });
 
+    // Contribution C6: Adaptively update detector weights on human feedback
+    try {
+      const adaptiveWeightService = require('../services/adaptiveWeight.service');
+      await adaptiveWeightService.processFeedbackUpdate(anomaly, reviewStatus, req.user);
+    } catch (wErr) {
+      console.warn('Adaptive detector weighting update skipped:', wErr.message);
+    }
+
     return res.status(200).json({
       success: true,
       message: 'Human review verdict submitted successfully',

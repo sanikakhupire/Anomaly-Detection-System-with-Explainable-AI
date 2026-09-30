@@ -46,6 +46,7 @@ from app.api.anomaly_detection import router as anomaly_detection_router
 from app.api.forensics import router as forensics_router
 from app.api.explainability import router as explainability_router
 from app.api.validation import router as validation_router
+from app.api.adaptive_weights import router as adaptive_weights_router
 
 app.include_router(profile_router)
 app.include_router(schema_mapping_router)
@@ -55,6 +56,7 @@ app.include_router(anomaly_detection_router)
 app.include_router(forensics_router)
 app.include_router(explainability_router)
 app.include_router(validation_router)
+app.include_router(adaptive_weights_router)
 
 
 

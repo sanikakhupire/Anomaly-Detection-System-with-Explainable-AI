@@ -92,6 +92,9 @@ jest.mock('../../backend/src/services/ml.service', () => ({
     is_llm_augmented: false,
   }),
   validateBatchAnomalies: jest.fn().mockResolvedValue([]),
+  updateDetectorWeights: jest.fn().mockResolvedValue({
+    updated_weights: { robust_z: 0.40, isolation_forest: 0.35, z_score: 0.15, temporal: 0.10 },
+  }),
 }));
 
 describe('Phase 9 Backend Tests: Multi-Agent Validation & Review Queue (Contribution C5)', () => {
