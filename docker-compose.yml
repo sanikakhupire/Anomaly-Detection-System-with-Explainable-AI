@@ -1,0 +1,80 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:6.0
+    container_name: stat_anomaly_mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - anomaly_net
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  ml-service:
+    build:
+      context: ./ml-service
+      dockerfile: Dockerfile
+    container_name: stat_anomaly_ml_service
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - HOST=0.0.0.0
+    networks:
+      - anomaly_net
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: stat_anomaly_backend
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - NODE_ENV=production
+      - MONGODB_URI=mongodb://mongo:27017/anomaly_detection
+      - ML_SERVICE_URL=http://ml-service:8000
+      - JWT_SECRET=statistical_anomaly_production_secret_key_change_in_env
+      - JWT_EXPIRES_IN=7d
+      - UPLOAD_DIR=/app/uploads
+      - MAX_FILE_SIZE_MB=50
+    volumes:
+      - uploads_data:/app/uploads
+    depends_on:
+      mongo:
+        condition: service_healthy
+      ml-service:
+        condition: service_started
+    networks:
+      - anomaly_net
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: stat_anomaly_frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - anomaly_net
+
+volumes:
+  mongo_data:
+  uploads_data:
+
+networks:
+  anomaly_net:
+    driver: bridge
