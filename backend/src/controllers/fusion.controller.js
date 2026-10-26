@@ -72,6 +72,7 @@ const runFusion = async (req, res, next) => {
       keyColumns = [],
       compareColumns = [],
       maxRecords = 10000,
+      discrepancyThresholdPct = 5,
     } = req.body;
 
     if (!datasetAId || !datasetBId || datasetAId === datasetBId) {
@@ -80,15 +81,6 @@ const runFusion = async (req, res, next) => {
         message: 'Two distinct dataset IDs (datasetAId and datasetBId) are required.',
         data: null,
         error: 'INVALID_DATASETS',
-      });
-    }
-
-    if (!keyColumns || keyColumns.length === 0) {
-      return res.status(400).json({
-        success: false,
-        message: 'At least one keyColumn is required to match records across datasets.',
-        data: null,
-        error: 'KEY_COLUMNS_REQUIRED',
       });
     }
 
@@ -124,23 +116,102 @@ const runFusion = async (req, res, next) => {
       readCsvFile(pathB, maxRecords),
     ]);
 
+    // Resolve key columns (use supplied keys or auto-detect based on schema hierarchy and common identifiers)
+    let resolvedKeyCols = Array.isArray(keyColumns)
+      ? keyColumns.filter(Boolean)
+      : typeof keyColumns === 'string'
+      ? keyColumns.split(',').map((k) => k.trim()).filter(Boolean)
+      : [];
+
+    if (resolvedKeyCols.length === 0) {
+      const commonHeaders = dataA.headers.filter((h) => dataB.headers.includes(h));
+
+      // 1. Try schema mapping hierarchy and temporal columns
+      const hierarchyKeys = [];
+      if (datasetA.schemaMapping) {
+        const mappingA = datasetA.schemaMapping.entries
+          ? Object.fromEntries(datasetA.schemaMapping.entries())
+          : datasetA.schemaMapping;
+        const sortedHierarchy = Object.entries(mappingA)
+          .filter(([col, info]) => info && info.isHierarchy && commonHeaders.includes(col))
+          .sort((a, b) => (a[1].hierarchyLevel || 99) - (b[1].hierarchyLevel || 99))
+          .map(([col]) => col);
+
+        hierarchyKeys.push(...sortedHierarchy);
+        const dateCols = Object.entries(mappingA)
+          .filter(([col, info]) => info && ['date', 'year', 'month', 'timestamp'].includes(info.canonicalRole) && commonHeaders.includes(col))
+          .map(([col]) => col);
+        hierarchyKeys.push(...dateCols);
+      }
+
+      if (hierarchyKeys.length > 0) {
+        resolvedKeyCols = [...new Set(hierarchyKeys)];
+      } else {
+        // 2. Try known domain composite keys
+        const candidateKeySets = [
+          ['state', 'district', 'block', 'gram_panchayat', 'date'],
+          ['district', 'block', 'gram_panchayat', 'date'],
+          ['district', 'block', 'date'],
+          ['district', 'block', 'year', 'month'],
+          ['district', 'block'],
+          ['pc_name', 'candidate'],
+          ['ac_name', 'candidate'],
+          ['state', 'district', 'sub_district'],
+          ['state', 'district'],
+          ['district'],
+          ['record_id'],
+          ['id'],
+        ];
+
+        for (const candidateSet of candidateKeySets) {
+          if (candidateSet.every((col) => commonHeaders.includes(col))) {
+            resolvedKeyCols = candidateSet;
+            break;
+          }
+        }
+
+        // 3. Fallback: first common categorical (non-numeric) headers
+        if (resolvedKeyCols.length === 0 && dataA.rows.length > 0) {
+          const sampleRow = dataA.rows[0];
+          const stringCols = commonHeaders.filter((h) => typeof sampleRow[h] === 'string');
+          if (stringCols.length > 0) {
+            resolvedKeyCols = stringCols.slice(0, 3);
+          }
+        }
+      }
+    }
+
+    if (resolvedKeyCols.length === 0) {
+      return res.status(400).json({
+        success: false,
+        message: 'Could not auto-detect matching key columns. Please explicitly specify matching key columns (e.g., district, block).',
+        data: null,
+        error: 'KEY_COLUMNS_REQUIRED',
+      });
+    }
+
     // Resolve compare columns if omitted (use common numeric/feature columns)
-    let activeCompareCols = compareColumns;
-    if (!activeCompareCols || activeCompareCols.length === 0) {
+    let activeCompareCols = Array.isArray(compareColumns)
+      ? compareColumns.filter(Boolean)
+      : typeof compareColumns === 'string'
+      ? compareColumns.split(',').map((c) => c.trim()).filter(Boolean)
+      : [];
+
+    if (activeCompareCols.length === 0) {
       activeCompareCols = dataA.headers.filter(
-        (h) => dataB.headers.includes(h) && !keyColumns.includes(h)
+        (h) => dataB.headers.includes(h) && !resolvedKeyCols.includes(h)
       );
     }
 
     // Compute Source Trust Scores
-    const relevantCols = [...new Set([...keyColumns, ...activeCompareCols])];
+    const relevantCols = [...new Set([...resolvedKeyCols, ...activeCompareCols])];
     const sourceTrustA = computeSourceTrust(datasetA, dataA.rows, relevantCols);
     const sourceTrustB = computeSourceTrust(datasetB, dataB.rows, relevantCols);
 
     // Build index map for Dataset B
     const indexB = new Map();
     dataB.rows.forEach((rowB) => {
-      const compositeKey = keyColumns
+      const compositeKey = resolvedKeyCols
         .map((k) => String(rowB[k] ?? '').trim().toLowerCase())
         .join('::');
       if (compositeKey) {
@@ -150,10 +221,12 @@ const runFusion = async (req, res, next) => {
 
     let totalMatched = 0;
     const conflicts = [];
+    const thresholdPct = Number(req.body.discrepancyThresholdPct ?? req.body.thresholdPct ?? 5);
+    const thresholdRatio = Math.max(0.001, thresholdPct / 100);
 
     // Match records and identify discrepancies
     dataA.rows.forEach((rowA) => {
-      const compositeKey = keyColumns
+      const compositeKey = resolvedKeyCols
         .map((k) => String(rowA[k] ?? '').trim().toLowerCase())
         .join('::');
 
@@ -170,10 +243,10 @@ const runFusion = async (req, res, next) => {
 
         let hasConflict = false;
         if (typeof valA === 'number' && typeof valB === 'number') {
-          // Numeric conflict if relative discrepancy exceeds 0.5% or absolute difference > 0.01
+          // Numeric conflict if relative discrepancy exceeds threshold or absolute difference > 0.01
           const maxVal = Math.max(Math.abs(valA), Math.abs(valB));
           if (maxVal > 0) {
-            hasConflict = Math.abs(valA - valB) / maxVal > 0.005;
+            hasConflict = (Math.abs(valA - valB) / maxVal) > thresholdRatio;
           } else {
             hasConflict = Math.abs(valA - valB) > 0.01;
           }
@@ -210,7 +283,7 @@ const runFusion = async (req, res, next) => {
       name: name || `Fusion: ${datasetA.name} & ${datasetB.name}`,
       datasetA: datasetA._id,
       datasetB: datasetB._id,
-      keyColumns,
+      keyColumns: resolvedKeyCols,
       compareColumns: activeCompareCols,
       totalMatched,
       totalConflicts: conflicts.length,

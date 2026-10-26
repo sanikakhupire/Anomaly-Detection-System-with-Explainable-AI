@@ -133,6 +133,7 @@ const FusionPage = () => {
 
       if (res.success && res.data) {
         showToast('Fusion conflict analysis completed');
+        setError(null);
         await loadFusionDetail(res.data.fusionId);
         // Refresh list
         const refreshRes = await fusionService.getFusions({ limit: 50 });
@@ -142,7 +143,7 @@ const FusionPage = () => {
       }
     } catch (err) {
       console.error('Fusion execution error:', err);
-      setError(err.response?.data?.message || 'Fusion conflict analysis failed');
+      setError(err.message || err.response?.data?.message || 'Fusion conflict analysis failed');
     } finally {
       setRunning(false);
     }
