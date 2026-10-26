@@ -4,37 +4,33 @@ export const modelConfigService = {
   /**
    * Fetch active detector weight configuration and iteration history
    */
-  getWeights: async (datasetId = '') => {
+  getWeights: (datasetId = '') => {
     const url = datasetId ? `/models/weights/${datasetId}` : '/models/weights';
-    const response = await api.get(url);
-    return response.data;
+    return api.get(url);
   },
 
   /**
    * Manually tune detector weights and learning parameters
    */
-  tuneWeights: async (datasetId, payload) => {
+  tuneWeights: (datasetId, payload) => {
     const url = datasetId ? `/models/weights/${datasetId}/tune` : '/models/weights/tune';
-    const response = await api.post(url, payload);
-    return response.data;
+    return api.post(url, payload);
   },
 
   /**
    * Recalculate anomaly ensemble scores using active adaptive weights
    */
-  recalculateScores: async (datasetId) => {
+  recalculateScores: (datasetId) => {
     const url = datasetId ? `/models/weights/${datasetId}/recalculate` : '/models/weights/recalculate';
-    const response = await api.post(url, { datasetId });
-    return response.data;
+    return api.post(url, { datasetId });
   },
 
   /**
    * Reset detector weights to system baseline defaults
    */
-  resetWeights: async (datasetId = '') => {
+  resetWeights: (datasetId = '') => {
     const url = datasetId ? `/models/weights/${datasetId}/reset` : '/models/weights/reset';
-    const response = await api.post(url, {});
-    return response.data;
+    return api.post(url, {});
   },
 };
 
