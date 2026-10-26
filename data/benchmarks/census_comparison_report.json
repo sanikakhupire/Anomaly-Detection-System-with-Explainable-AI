@@ -1,0 +1,77 @@
+{
+  "dataset_name": "Census Demographic & Literacy",
+  "description": "Paired benchmark datasets for demographic anomaly detection verification.",
+  "total_records": 81,
+  "total_anomalies": 6,
+  "anomaly_rate_pct": 7.41,
+  "accurate_baseline_file": "census_accurate_baseline.csv",
+  "anomaly_test_file": "census_anomaly_test.csv",
+  "modified_records_diff": [
+    {
+      "record_index": 0,
+      "location": "Maharashtra -> Pune -> Pune_Block1",
+      "year": 2001,
+      "anomaly_type": "collective",
+      "target_column": "literate_population",
+      "accurate_baseline_value": 57752,
+      "injected_anomaly_value": 115701,
+      "description": "Collective cohort anomaly: synchronized identical pattern across Pune_Block1.",
+      "expected_detector": "Cohort Baseline / Peer Dispersion"
+    },
+    {
+      "record_index": 1,
+      "location": "Maharashtra -> Pune -> Pune_Block1",
+      "year": 2011,
+      "anomaly_type": "collective",
+      "target_column": "literate_population",
+      "accurate_baseline_value": 63414,
+      "injected_anomaly_value": 115701,
+      "description": "Collective cohort anomaly: synchronized identical pattern across Pune_Block1.",
+      "expected_detector": "Cohort Baseline / Peer Dispersion"
+    },
+    {
+      "record_index": 2,
+      "location": "Maharashtra -> Pune -> Pune_Block1",
+      "year": 2021,
+      "anomaly_type": "collective",
+      "target_column": "literate_population",
+      "accurate_baseline_value": 71669,
+      "injected_anomaly_value": 115701,
+      "description": "Collective cohort anomaly: synchronized identical pattern across Pune_Block1.",
+      "expected_detector": "Cohort Baseline / Peer Dispersion"
+    },
+    {
+      "record_index": 3,
+      "location": "Maharashtra -> Pune -> Pune_Block2",
+      "year": 2001,
+      "anomaly_type": "temporal_spike",
+      "target_column": "total_population",
+      "accurate_baseline_value": 67390.0,
+      "injected_anomaly_value": 269560,
+      "description": "Sudden temporal spike outlier in total_population.",
+      "expected_detector": "Temporal Z-Score / Decadal Growth Outlier"
+    },
+    {
+      "record_index": 44,
+      "location": "Uttar Pradesh -> Lucknow -> Lucknow_Block3",
+      "year": 2021,
+      "anomaly_type": "contextual",
+      "target_column": "total_population",
+      "accurate_baseline_value": 297408.0,
+      "injected_anomaly_value": 292866,
+      "description": "Contextual peer outlier in total_population: conforms to global range but violates Lucknow baseline.",
+      "expected_detector": "Hierarchy-Aware Peer Groups (C2)"
+    },
+    {
+      "record_index": 58,
+      "location": "Kerala -> Ernakulam -> Ernakulam_Block2",
+      "year": 2011,
+      "anomaly_type": "point",
+      "target_column": "total_population",
+      "accurate_baseline_value": 101950.0,
+      "injected_anomaly_value": 1064591,
+      "description": "Extreme point outlier in total_population: shifted by factor 8.0x.",
+      "expected_detector": "Robust Z-Score (MAD) / Isolation Forest"
+    }
+  ]
+}

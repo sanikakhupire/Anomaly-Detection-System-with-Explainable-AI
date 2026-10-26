@@ -1,0 +1,82 @@
+state,district,block,year,total_population,male_population,female_population,literate_population,area_sq_km,households
+Maharashtra,Pune,Pune_Block1,2001,70899,36092,34807,115701,295.07,16565
+Maharashtra,Pune,Pune_Block1,2011,78115,39870,38245,115701,295.07,18106
+Maharashtra,Pune,Pune_Block1,2021,86695,44026,42669,115701,295.07,20638
+Maharashtra,Pune,Pune_Block2,2001,269560,34499,32891,55024,129.52,14825
+Maharashtra,Pune,Pune_Block2,2011,76115,39088,37027,61713,129.52,16940
+Maharashtra,Pune,Pune_Block2,2021,81822,41765,40057,67332,129.52,18767
+Maharashtra,Pune,Pune_Block3,2001,104926,53327,51599,85481,345.47,24919
+Maharashtra,Pune,Pune_Block3,2011,115389,58349,57040,94325,345.47,25594
+Maharashtra,Pune,Pune_Block3,2021,129137,65721,63416,106421,345.47,29764
+Maharashtra,Nagpur,Nagpur_Block1,2001,183968,95746,88222,118305,149.87,39853
+Maharashtra,Nagpur,Nagpur_Block1,2011,205778,106493,99285,134190,149.87,41557
+Maharashtra,Nagpur,Nagpur_Block1,2021,232504,120490,112014,150815,149.87,47089
+Maharashtra,Nagpur,Nagpur_Block2,2001,132424,68690,63734,86283,234.02,28590
+Maharashtra,Nagpur,Nagpur_Block2,2011,147120,76675,70445,96484,234.02,31398
+Maharashtra,Nagpur,Nagpur_Block2,2021,160950,84531,76419,102574,234.02,35461
+Maharashtra,Nagpur,Nagpur_Block3,2001,123988,65308,58680,80951,133.65,26017
+Maharashtra,Nagpur,Nagpur_Block3,2011,142774,75110,67664,91945,133.65,33259
+Maharashtra,Nagpur,Nagpur_Block3,2021,157626,81734,75892,102323,133.65,35304
+Maharashtra,Nashik,Nashik_Block1,2001,110519,57595,52924,70992,180.12,23772
+Maharashtra,Nashik,Nashik_Block1,2011,123579,64647,58932,81061,180.12,25328
+Maharashtra,Nashik,Nashik_Block1,2021,133076,69777,63299,84874,180.12,27907
+Maharashtra,Nashik,Nashik_Block2,2001,87511,46009,41502,55798,86.86,18583
+Maharashtra,Nashik,Nashik_Block2,2011,96992,50252,46740,62255,86.86,21419
+Maharashtra,Nashik,Nashik_Block2,2021,104673,54384,50289,67143,86.86,24561
+Maharashtra,Nashik,Nashik_Block3,2001,194498,101908,92590,124295,267.59,42604
+Maharashtra,Nashik,Nashik_Block3,2011,219489,115165,104324,141597,267.59,44733
+Maharashtra,Nashik,Nashik_Block3,2021,237873,124497,113376,155731,267.59,53845
+Uttar Pradesh,Varanasi,Varanasi_Block1,2001,246055,127693,118362,160866,195.32,58507
+Uttar Pradesh,Varanasi,Varanasi_Block1,2011,267224,140201,127023,170846,195.32,59780
+Uttar Pradesh,Varanasi,Varanasi_Block1,2021,308047,159497,148550,198167,195.32,66748
+Uttar Pradesh,Varanasi,Varanasi_Block2,2001,103046,53987,49059,66212,178.18,24363
+Uttar Pradesh,Varanasi,Varanasi_Block2,2011,112856,58793,54063,72995,178.18,26609
+Uttar Pradesh,Varanasi,Varanasi_Block2,2021,128551,67424,61127,82250,178.18,27997
+Uttar Pradesh,Varanasi,Varanasi_Block3,2001,296134,154320,141814,189104,229.28,65870
+Uttar Pradesh,Varanasi,Varanasi_Block3,2011,336210,175598,160612,220613,229.28,74398
+Uttar Pradesh,Varanasi,Varanasi_Block3,2021,365878,189882,175996,238760,229.28,84682
+Uttar Pradesh,Lucknow,Lucknow_Block1,2001,94296,48538,45758,76964,91.01,21522
+Uttar Pradesh,Lucknow,Lucknow_Block1,2011,104180,52984,51196,84165,91.01,21919
+Uttar Pradesh,Lucknow,Lucknow_Block1,2021,114865,58990,55875,93269,91.01,26770
+Uttar Pradesh,Lucknow,Lucknow_Block2,2001,175340,89982,85358,145139,141.71,38007
+Uttar Pradesh,Lucknow,Lucknow_Block2,2011,197022,99743,97279,159241,141.71,44543
+Uttar Pradesh,Lucknow,Lucknow_Block2,2021,219271,111398,107873,180773,141.71,44886
+Uttar Pradesh,Lucknow,Lucknow_Block3,2001,232159,119171,112988,191694,290.57,49552
+Uttar Pradesh,Lucknow,Lucknow_Block3,2011,263515,135661,127854,212418,290.57,55701
+Uttar Pradesh,Lucknow,Lucknow_Block3,2021,292866,151236,146172,240637,290.57,62353
+Uttar Pradesh,Gorakhpur,Gorakhpur_Block1,2001,257934,134034,123900,167571,167.86,52862
+Uttar Pradesh,Gorakhpur,Gorakhpur_Block1,2011,290005,152510,137495,186812,167.86,65728
+Uttar Pradesh,Gorakhpur,Gorakhpur_Block1,2021,324868,170377,154491,213104,167.86,71961
+Uttar Pradesh,Gorakhpur,Gorakhpur_Block2,2001,324677,169243,155434,209937,250.41,74532
+Uttar Pradesh,Gorakhpur,Gorakhpur_Block2,2011,370645,192689,177956,238130,250.41,87841
+Uttar Pradesh,Gorakhpur,Gorakhpur_Block2,2021,397306,205721,191585,260474,250.41,80558
+Uttar Pradesh,Gorakhpur,Gorakhpur_Block3,2001,113863,58944,54919,73265,281.88,24527
+Uttar Pradesh,Gorakhpur,Gorakhpur_Block3,2011,127180,66905,60275,81771,281.88,29218
+Uttar Pradesh,Gorakhpur,Gorakhpur_Block3,2021,140261,73527,66734,90673,281.88,31181
+Kerala,Ernakulam,Ernakulam_Block1,2001,94857,46117,48740,89027,332.76,19001
+Kerala,Ernakulam,Ernakulam_Block1,2011,107730,52328,55402,100815,332.76,21977
+Kerala,Ernakulam,Ernakulam_Block1,2021,117751,56509,61242,109665,332.76,26551
+Kerala,Ernakulam,Ernakulam_Block2,2001,93176,45147,48029,87440,193.34,21845
+Kerala,Ernakulam,Ernakulam_Block2,2011,1064591,48732,53218,93995,193.34,21863
+Kerala,Ernakulam,Ernakulam_Block2,2021,113544,54801,58743,106748,193.34,25443
+Kerala,Ernakulam,Ernakulam_Block3,2001,76263,37130,39133,70333,226.51,15698
+Kerala,Ernakulam,Ernakulam_Block3,2011,82718,39990,42728,76496,226.51,17912
+Kerala,Ernakulam,Ernakulam_Block3,2021,92792,44608,48184,85703,226.51,21877
+Kerala,Thiruvananthapuram,Thiruvananthapuram_Block1,2001,143008,68635,74373,132296,191.07,33209
+Kerala,Thiruvananthapuram,Thiruvananthapuram_Block1,2011,158325,76422,81903,149170,191.07,35977
+Kerala,Thiruvananthapuram,Thiruvananthapuram_Block1,2021,174508,84684,89824,161154,191.07,38415
+Kerala,Thiruvananthapuram,Thiruvananthapuram_Block2,2001,82953,40198,42755,77701,190.42,17384
+Kerala,Thiruvananthapuram,Thiruvananthapuram_Block2,2011,92979,44662,48317,86386,190.42,18731
+Kerala,Thiruvananthapuram,Thiruvananthapuram_Block2,2021,103853,49937,53916,96898,190.42,23612
+Kerala,Thiruvananthapuram,Thiruvananthapuram_Block3,2001,79797,38777,41020,74278,122.83,18672
+Kerala,Thiruvananthapuram,Thiruvananthapuram_Block3,2011,86885,41447,45438,80468,122.83,20619
+Kerala,Thiruvananthapuram,Thiruvananthapuram_Block3,2021,95852,45940,49912,90479,122.83,21409
+Kerala,Kozhikode,Kozhikode_Block1,2001,122719,58979,63740,113205,197.14,27272
+Kerala,Kozhikode,Kozhikode_Block1,2011,131590,63255,68335,123087,197.14,26936
+Kerala,Kozhikode,Kozhikode_Block1,2021,146771,71397,75374,137864,197.14,34769
+Kerala,Kozhikode,Kozhikode_Block2,2001,126395,60529,65866,118848,251.83,27130
+Kerala,Kozhikode,Kozhikode_Block2,2011,141015,67501,73514,132392,251.83,29037
+Kerala,Kozhikode,Kozhikode_Block2,2021,155140,74535,80605,143819,251.83,35106
+Kerala,Kozhikode,Kozhikode_Block3,2001,145470,70390,75080,137472,107.21,34482
+Kerala,Kozhikode,Kozhikode_Block3,2011,164581,78792,85789,152920,107.21,38323
+Kerala,Kozhikode,Kozhikode_Block3,2021,183802,87874,95928,173128,107.21,37953
