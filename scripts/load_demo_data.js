@@ -29,6 +29,7 @@ const demoConfigs = [
     description: 'Synthetic multi-decade Census demographic dataset with ground truth injected point, contextual, collective, temporal, digit, and conflict anomalies.',
     category: 'Census',
     dataType: 'SYNTHETIC/DEMO',
+    relativeDir: '../data/demo',
     fileName: 'census_demo.csv',
     labelsFileName: 'census_demo_labels.json',
   },
@@ -37,6 +38,7 @@ const demoConfigs = [
     description: 'Synthetic monthly MGNREGA rural labor demand & wage disbursement dataset with ground truth anomalies for peer group and temporal testing.',
     category: 'MGNREGA',
     dataType: 'SYNTHETIC/DEMO',
+    relativeDir: '../data/demo',
     fileName: 'mgnrega_demo.csv',
     labelsFileName: 'mgnrega_demo_labels.json',
   },
@@ -45,8 +47,27 @@ const demoConfigs = [
     description: 'Synthetic polling station voting dataset across multiple election cycles with ballot-stuffing, Benford violations, and logical conflict ground truth anomalies.',
     category: 'Election',
     dataType: 'SYNTHETIC/DEMO',
+    relativeDir: '../data/demo',
     fileName: 'election_demo.csv',
     labelsFileName: 'election_demo_labels.json',
+  },
+  {
+    name: 'mgnrega_accurate_baseline',
+    description: 'Ground-truth accurate baseline dataset with 500 nominal records for comparison and cross-source fusion testing.',
+    category: 'MGNREGA',
+    dataType: 'SYNTHETIC/DEMO',
+    relativeDir: '../data/test_samples',
+    fileName: 'mgnrega_accurate_baseline.csv',
+    labelsFileName: null,
+  },
+  {
+    name: 'mgnrega_anomaly_test',
+    description: 'Test dataset with 41 precisely injected anomalies across 6 categories for validation and detection evaluation.',
+    category: 'MGNREGA',
+    dataType: 'SYNTHETIC/DEMO',
+    relativeDir: '../data/test_samples',
+    fileName: 'mgnrega_anomaly_test.csv',
+    labelsFileName: 'mgnrega_comparison_report.json',
   },
 ];
 
@@ -59,7 +80,7 @@ async function getAdminToken() {
   if (!admin) {
     const passwordHash = await User.hashPassword(adminPassword);
     admin = await User.create({
-      name: 'System Administrator',
+      name: 'Lead System Administrator',
       email: adminEmail,
       passwordHash,
       role: 'ADMIN',
@@ -86,14 +107,14 @@ async function loadDemoDatasets() {
 
   await connectDB();
   const token = await getAdminToken();
-  const demoDir = path.resolve(__dirname, '../data/demo');
 
   for (const config of demoConfigs) {
-    const filePath = path.join(demoDir, config.fileName);
-    const labelsPath = path.join(demoDir, config.labelsFileName);
+    const targetDir = path.resolve(__dirname, config.relativeDir);
+    const filePath = path.join(targetDir, config.fileName);
+    const labelsPath = config.labelsFileName ? path.join(targetDir, config.labelsFileName) : null;
 
     if (!fs.existsSync(filePath)) {
-      console.error(`[Error] File not found: ${filePath}. Run synthetic.py first.`);
+      console.error(`[Error] File not found: ${filePath}. Skipping.`);
       continue;
     }
 
