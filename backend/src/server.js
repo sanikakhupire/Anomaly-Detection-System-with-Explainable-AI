@@ -1,12 +1,14 @@
 require('dotenv').config();
 const app = require('./app');
 const { connectDB } = require('./config/db');
+const { seedUsersIfMissing } = require('./utils/seed');
 
 const PORT = process.env.PORT || 5000;
 
 const startServer = async () => {
   try {
     await connectDB();
+    await seedUsersIfMissing();
     const server = app.listen(PORT, () => {
       console.log(`[Backend] Server listening on port ${PORT} in ${process.env.NODE_ENV || 'development'} mode`);
     });

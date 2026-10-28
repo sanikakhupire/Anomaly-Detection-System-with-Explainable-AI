@@ -54,8 +54,32 @@ const seedDatabase = async () => {
   }
 };
 
+const seedUsersIfMissing = async () => {
+  try {
+    for (const userData of seedUsers) {
+      const existing = await User.findOne({ email: userData.email.toLowerCase() });
+      if (!existing) {
+        const passwordHash = await User.hashPassword(userData.password);
+        await User.create({
+          name: userData.name,
+          email: userData.email.toLowerCase(),
+          passwordHash,
+          role: userData.role,
+        });
+        console.log(`[Seed] Auto-seeded ${userData.role} user: ${userData.email}`);
+      }
+    }
+  } catch (error) {
+    console.warn(`[Seed Warning] Auto-seed check skipped or failed: ${error.message}`);
+  }
+};
+
 if (require.main === module) {
   seedDatabase();
 }
 
-module.exports = seedDatabase;
+module.exports = {
+  seedDatabase,
+  seedUsersIfMissing,
+  seedUsers,
+};
