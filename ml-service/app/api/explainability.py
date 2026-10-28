@@ -5,6 +5,7 @@ Provides lazy SHAP/DIFFI attributions, counterfactual generation, and faithfulne
 
 from typing import Dict, Any, List, Optional
 import os
+import numpy as np
 import pandas as pd
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel, Field

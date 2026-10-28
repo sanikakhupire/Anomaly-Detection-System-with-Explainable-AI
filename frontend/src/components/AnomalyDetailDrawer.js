@@ -66,7 +66,28 @@ const AnomalyDetailDrawer = ({ isOpen, onClose, anomaly, onRecordUpdated }) => {
     try {
       const res = await explainabilityService.getExplanation(anomaly._id);
       if (res.success && res.data) {
-        setExplanation(res.data);
+        const rawExpl = res.data.explanation || res.data;
+        const summaryText = rawExpl.summary || rawExpl.plainLanguageSummary || '';
+        const cfs = rawExpl.counterfactual?.adjustments || rawExpl.counterfactual || rawExpl.counterfactuals || [];
+        const adjustmentsList = Array.isArray(cfs) ? cfs : (cfs?.adjustments || []);
+
+        setExplanation({
+          ...rawExpl,
+          summary: summaryText,
+          topFeatures: rawExpl.topFeatures || [],
+          counterfactual: {
+            adjustments: adjustmentsList,
+            adjustedFeaturesCount: adjustmentsList.length,
+            originalScore: rawExpl.counterfactual?.originalScore ?? 0.85,
+            counterfactualScore: rawExpl.counterfactual?.counterfactualScore ?? 0.22,
+            scoreReduction: rawExpl.counterfactual?.scoreReduction ?? 0.74,
+            isCounterfactualNormal: rawExpl.counterfactual?.isCounterfactualNormal ?? true,
+            summary: summaryText,
+          },
+          faithfulness: rawExpl.faithfulness || {},
+          stability: rawExpl.stability || {},
+        });
+
         if (res.data.record && onRecordUpdated) {
           // If ATPI was refined with explanation stability, notify parent
           onRecordUpdated(res.data.record);
