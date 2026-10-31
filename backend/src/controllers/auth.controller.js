@@ -2,6 +2,7 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 const { sendSuccess, sendError } = require('../utils/response');
 const { logAudit } = require('../services/audit.service');
+const { seedUsersIfMissing } = require('../utils/seed');
 
 const generateToken = (user) => {
   const secret = process.env.JWT_SECRET || 'super_secret_jwt_key_for_development_change_in_production_123';
@@ -71,7 +72,13 @@ const login = async (req, res, next) => {
   try {
     const { email, password } = req.body;
 
-    const user = await User.findOne({ email: email.toLowerCase() });
+    let user = await User.findOne({ email: email.toLowerCase() });
+    if (!user) {
+      // Auto-heal: Ensure default platform accounts exist if database was reset or empty
+      await seedUsersIfMissing();
+      user = await User.findOne({ email: email.toLowerCase() });
+    }
+
     if (!user) {
       await logAudit({
         action: 'LOGIN_FAILED',

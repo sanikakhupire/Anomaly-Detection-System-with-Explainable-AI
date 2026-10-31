@@ -1,7 +1,10 @@
 const mongoose = require('mongoose');
 
 const connectDB = async (uri) => {
-  const mongoURI = uri || process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/anomaly_detection';
+  const defaultUri = process.env.NODE_ENV === 'test'
+    ? (process.env.MONGODB_TEST_URI || 'mongodb://127.0.0.1:27017/anomaly_detection_test')
+    : (process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/anomaly_detection');
+  const mongoURI = uri || defaultUri;
   try {
     const conn = await mongoose.connect(mongoURI);
     if (process.env.NODE_ENV !== 'test') {
