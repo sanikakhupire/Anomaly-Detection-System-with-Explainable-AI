@@ -1,0 +1,501 @@
+state,parliamentary_constituency,assembly_constituency,polling_station_id,election_year,total_electors,votes_polled,valid_votes,rejected_votes,winning_candidate_votes,runner_up_votes,margin,winner_party
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_001,2014,848,546,541,5,238,163,75,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_001,2019,889,554,551,3,334,184,150,Party_Beta
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_001,2024,916,553,548,5,297,175,122,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_002,2014,932,498,493,5,304,209,95,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_002,2019,972,507,500,7,248,137,111,Party_Beta
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_002,2024,1028,647,641,6,332,186,146,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_003,2014,1297,782,774,8,475,371,104,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_003,2019,1374,801,790,11,383,276,107,Party_Beta
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_003,2024,1405,791,781,10,371,265,106,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_004,2014,894,579,576,3,330,201,129,Party_Gamma
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_004,2019,946,602,595,7,292,171,121,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_004,2024,984,645,639,6,315,237,78,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_005,2014,837,510,506,4,298,228,70,Party_Gamma
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_005,2019,886,530,525,5,223,129,94,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_005,2024,915,558,552,6,298,212,86,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_006,2014,791,530,525,5,312,230,82,Party_Beta
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_006,2019,822,533,530,3,279,203,76,Party_Gamma
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_006,2024,849,456,453,3,264,213,51,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_007,2014,1063,610,602,8,315,239,76,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_007,2019,1107,747,737,10,382,245,137,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_007,2024,1153,692,689,3,414,257,157,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_008,2014,799,478,471,7,261,203,58,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_008,2019,828,514,509,5,222,149,73,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_008,2024,875,481,479,2,266,147,119,Party_Beta
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_009,2014,889,560,556,4,248,162,86,Party_Gamma
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_009,2019,936,625,617,8,340,266,74,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_009,2024,969,640,636,4,356,286,70,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_010,2014,904,528,521,7,316,248,68,Party_Gamma
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_010,2019,950,593,589,4,275,178,97,Party_Beta
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_010,2024,976,564,557,7,268,191,77,Party_Beta
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_011,2014,1210,817,810,7,442,348,94,Party_Gamma
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_011,2019,1259,784,775,9,361,252,109,Party_Gamma
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_011,2024,1316,721,711,10,428,283,145,Party_Gamma
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_012,2014,1027,588,582,6,358,205,153,Party_Beta
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_012,2019,1066,583,577,6,322,232,90,Party_Gamma
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_012,2024,1118,618,611,7,287,183,104,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_013,2014,860,496,493,3,286,232,54,Party_Beta
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_013,2019,894,476,474,2,217,124,93,Party_Beta
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_013,2024,921,543,537,6,242,204,38,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_014,2014,1059,696,691,5,332,236,96,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_014,2019,1099,681,678,3,356,254,102,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_014,2024,1153,625,622,3,350,196,154,Party_Gamma
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_015,2014,802,439,437,2,231,176,55,Party_Alpha
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_015,2019,850,571,564,7,305,206,99,Party_Beta
+Maharashtra,Pune_PC,Pune_Cantonment,Pune_Cantonment_PS_015,2024,879,459,457,2,195,157,38,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_001,2014,961,617,609,8,312,232,80,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_001,2019,1005,609,602,7,366,305,61,Party_Beta
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_001,2024,1050,703,696,7,381,262,119,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_002,2014,1174,791,780,11,338,196,142,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_002,2019,1228,646,639,7,352,234,118,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_002,2024,1269,800,794,6,339,229,110,Party_Gamma
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_003,2014,1127,662,655,7,370,218,152,Party_Beta
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_003,2019,1190,664,657,7,307,203,104,Party_Beta
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_003,2024,1244,745,739,6,325,184,141,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_004,2014,978,658,651,7,337,194,143,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_004,2019,1029,589,583,6,337,265,72,Party_Beta
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_004,2024,1055,641,635,6,311,182,129,Party_Gamma
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_005,2014,822,537,530,7,267,165,102,Party_Beta
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_005,2019,859,457,455,2,225,148,77,Party_Gamma
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_005,2024,894,600,592,8,293,168,125,Party_Beta
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_006,2014,923,528,524,4,262,189,73,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_006,2019,974,524,521,3,296,215,81,Party_Beta
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_006,2024,1001,533,528,5,306,247,59,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_007,2014,880,463,457,6,215,144,71,Party_Gamma
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_007,2019,950,599,594,5,318,247,71,Party_Beta
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_007,2024,972,647,638,9,318,185,133,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_008,2014,869,501,496,5,304,227,77,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_008,2019,896,542,538,4,299,179,120,Party_Beta
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_008,2024,952,635,632,3,335,200,135,Party_Gamma
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_009,2014,1107,719,709,10,382,253,129,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_009,2019,1170,696,690,6,297,240,57,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_009,2024,1215,825,817,8,497,400,97,Party_Beta
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_010,2014,826,555,549,6,304,223,81,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_010,2019,866,543,538,5,281,213,68,Party_Beta
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_010,2024,903,538,534,4,292,231,61,Party_Beta
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_011,2014,1066,654,649,5,389,255,134,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_011,2019,1104,626,620,6,359,247,112,Party_Beta
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_011,2024,1138,681,676,5,416,290,126,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_012,2014,852,490,484,6,267,161,106,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_012,2019,897,472,469,3,213,123,90,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_012,2024,914,606,603,3,292,168,124,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_013,2014,873,550,545,5,270,148,122,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_013,2019,909,499,496,3,256,188,68,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_013,2024,944,603,600,3,337,276,61,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_014,2014,1243,667,659,8,351,281,70,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_014,2019,1288,717,711,6,349,259,90,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_014,2024,1356,832,822,10,366,232,134,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_015,2014,1023,631,627,4,304,237,67,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_015,2019,1066,586,582,4,348,200,148,Party_Alpha
+Maharashtra,Pune_PC,Shivajinagar,Shivajinagar_PS_015,2024,1109,649,640,9,319,268,51,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_001,2014,861,539,532,7,284,180,104,Party_Beta
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_001,2019,897,495,488,7,224,173,51,Party_Beta
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_001,2024,938,531,526,5,271,192,79,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_002,2014,753,457,453,4,252,145,107,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_002,2019,796,489,485,4,237,161,76,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_002,2024,824,526,522,4,322,197,125,Party_Gamma
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_003,2014,1266,828,823,5,378,226,152,Party_Beta
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_003,2019,1328,863,853,10,419,341,78,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_003,2024,1360,789,782,7,445,312,133,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_004,2014,903,599,594,5,357,263,94,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_004,2019,916,583,577,6,343,240,103,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_004,2024,960,620,616,4,289,223,66,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_005,2014,1262,822,817,5,363,243,120,Party_Beta
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_005,2019,1325,803,796,7,457,253,204,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_005,2024,1350,776,771,5,413,277,136,Party_Gamma
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_006,2014,1097,736,732,4,381,279,102,Party_Beta
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_006,2019,1131,754,745,9,409,320,89,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_006,2024,1184,730,724,6,439,363,76,Party_Beta
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_007,2014,1150,752,746,6,347,254,93,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_007,2019,1196,632,627,5,263,171,92,Party_Beta
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_007,2024,1256,838,830,8,501,363,138,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_008,2014,926,518,513,5,218,140,78,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_008,2019,978,510,505,5,309,183,126,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_008,2024,1010,686,680,6,294,224,70,Party_Beta
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_009,2014,1062,558,553,5,239,178,61,Party_Beta
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_009,2019,1105,667,661,6,343,267,76,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_009,2024,1154,774,768,6,421,283,138,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_010,2014,1222,799,789,10,418,262,156,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_010,2019,1299,745,738,7,392,300,92,Party_Gamma
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_010,2024,1324,739,730,9,427,286,141,Party_Gamma
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_011,2014,926,614,611,3,282,157,125,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_011,2019,961,589,584,5,340,222,118,Party_Gamma
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_011,2024,1003,654,649,5,319,258,61,Party_Beta
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_012,2014,1340,882,874,8,506,343,163,Party_Gamma
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_012,2019,1405,821,816,5,411,242,169,Party_Beta
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_012,2024,1460,799,793,6,478,279,199,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_013,2014,795,518,515,3,230,188,42,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_013,2019,818,521,518,3,268,194,74,Party_Beta
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_013,2024,834,502,500,2,283,163,120,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_014,2014,1108,619,614,5,301,230,71,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_014,2019,1169,682,673,9,347,219,128,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_014,2024,1210,660,652,8,398,237,161,Party_Beta
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_015,2014,1198,754,747,7,436,344,92,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_015,2019,1263,852,848,4,409,324,85,Party_Alpha
+Maharashtra,Pune_PC,Kothrud,Kothrud_PS_015,2024,1282,777,767,10,445,333,112,Party_Beta
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_001,2014,1212,725,720,5,438,246,192,Party_Gamma
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_001,2019,1251,713,709,4,325,190,135,Party_Beta
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_001,2024,1337,897,889,8,523,338,185,Party_Gamma
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_002,2014,1260,679,676,3,329,253,76,Party_Beta
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_002,2019,1331,759,752,7,363,268,95,Party_Beta
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_002,2024,1387,813,806,7,338,205,133,Party_Gamma
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_003,2014,1163,778,774,4,333,192,141,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_003,2019,1233,813,801,12,403,272,131,Party_Beta
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_003,2024,1254,799,795,4,381,307,74,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_004,2014,1041,605,598,7,364,286,78,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_004,2019,1085,666,657,9,354,291,63,Party_Gamma
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_004,2024,1124,656,648,8,379,222,157,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_005,2014,967,508,501,7,290,214,76,Party_Beta
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_005,2019,1025,619,615,4,318,270,48,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_005,2024,1047,681,677,4,357,259,98,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_006,2014,1100,728,718,10,417,311,106,Party_Gamma
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_006,2019,1146,730,725,5,305,231,74,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_006,2024,1187,659,652,7,384,268,116,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_007,2014,1097,729,722,7,381,308,73,Party_Beta
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_007,2019,1144,715,706,9,396,317,79,Party_Gamma
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_007,2024,1188,747,739,8,333,261,72,Party_Beta
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_008,2014,778,446,441,5,257,205,52,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_008,2019,812,423,420,3,258,184,74,Party_Beta
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_008,2024,839,438,434,4,216,130,86,Party_Beta
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_009,2014,1021,684,676,8,324,247,77,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_009,2019,1066,564,561,3,346,261,85,Party_Gamma
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_009,2024,1124,700,693,7,300,239,61,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_010,2014,1202,677,667,10,340,203,137,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_010,2019,1274,803,798,5,443,331,112,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_010,2024,1286,734,726,8,334,270,64,Party_Beta
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_011,2014,1267,772,765,7,345,211,134,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_011,2019,1322,799,795,4,380,313,67,Party_Beta
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_011,2024,1362,748,741,7,399,292,107,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_012,2014,1258,716,710,6,308,205,103,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_012,2019,1293,732,724,8,417,234,183,Party_Gamma
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_012,2024,1347,913,908,5,493,375,118,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_013,2014,987,564,559,5,273,153,120,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_013,2019,1022,624,617,7,283,170,113,Party_Beta
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_013,2024,1068,717,713,4,384,282,102,Party_Gamma
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_014,2014,1309,830,820,10,478,274,204,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_014,2019,1358,835,825,10,353,211,142,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_014,2024,1399,922,916,6,446,269,177,Party_Gamma
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_015,2014,1032,618,612,6,285,212,73,Party_Beta
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_015,2019,1069,672,669,3,315,217,98,Party_Alpha
+Maharashtra,Pune_PC,Kasba_Peth,Kasba_Peth_PS_015,2024,1124,659,651,8,369,288,81,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_001,2014,958,607,604,3,326,238,88,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_001,2019,1011,614,610,4,367,225,142,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_001,2024,1037,581,574,7,261,162,99,Party_Delta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_002,2014,1181,715,711,4,312,209,103,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_002,2019,1199,761,756,5,464,291,173,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_002,2024,1270,751,742,9,455,312,143,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_003,2014,795,534,530,4,288,210,78,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_003,2019,843,503,499,4,245,174,71,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_003,2024,876,555,548,7,242,152,90,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_004,2014,1314,758,754,4,350,211,139,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_004,2019,1363,745,741,4,454,250,204,Party_Delta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_004,2024,1393,969,959,10,502,328,174,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_005,2014,942,610,602,8,333,228,105,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_005,2019,992,688,683,5,420,278,142,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_005,2024,1044,708,701,7,424,321,103,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_006,2014,799,459,454,5,249,145,104,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_006,2019,838,557,552,5,328,220,108,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_006,2024,862,557,550,7,318,216,102,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_007,2014,1151,682,675,7,359,238,121,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_007,2019,1176,679,674,5,292,214,78,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_007,2024,1263,874,863,11,502,293,209,Party_Delta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_008,2014,1103,698,691,7,395,314,81,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_008,2019,1144,787,783,4,383,222,161,Party_Delta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_008,2024,1194,772,761,11,408,235,173,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_009,2014,797,445,442,3,201,124,77,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_009,2019,822,457,453,4,277,192,85,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_009,2024,862,538,535,3,292,206,86,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_010,2014,832,477,472,5,277,214,63,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_010,2019,862,503,497,6,275,159,116,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_010,2024,886,499,495,4,231,184,47,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_011,2014,1220,699,692,7,378,214,164,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_011,2019,1272,887,882,5,441,299,142,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_011,2024,1339,852,845,7,485,305,180,Party_Delta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_012,2014,868,513,510,3,221,156,65,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_012,2019,903,580,576,4,320,198,122,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_012,2024,943,559,553,6,305,219,86,Party_Delta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_013,2014,915,634,630,4,289,206,83,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_013,2019,946,574,567,7,272,229,43,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_013,2024,980,684,675,9,397,280,117,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_014,2014,1251,826,821,5,473,360,113,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_014,2019,1302,774,768,6,359,252,107,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_014,2024,1351,790,779,11,352,276,76,Party_Delta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_015,2014,1122,695,689,6,375,282,93,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_015,2019,1197,784,779,5,454,294,160,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_East,Nagpur_East_PS_015,2024,1237,736,726,10,424,250,174,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_001,2014,1080,742,735,7,421,253,168,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_001,2019,1124,692,686,6,299,234,65,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_001,2024,1178,812,801,11,472,260,212,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_002,2014,1039,625,619,6,286,199,87,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_002,2019,1105,606,599,7,280,166,114,Party_Delta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_002,2024,1132,736,732,4,453,360,93,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_003,2014,1017,650,644,6,287,211,76,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_003,2019,1050,655,649,6,322,253,69,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_003,2024,1112,674,668,6,315,243,72,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_004,2014,1207,812,803,9,347,195,152,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_004,2019,1280,823,815,8,366,215,151,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_004,2024,1331,820,813,7,416,326,90,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_005,2014,897,499,494,5,287,164,123,Party_Delta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_005,2019,939,624,616,8,306,209,97,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_005,2024,977,623,620,3,279,200,79,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_006,2014,884,489,484,5,210,116,94,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_006,2019,922,572,567,5,350,294,56,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_006,2024,952,576,570,6,247,167,80,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_007,2014,1170,748,742,6,329,242,87,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_007,2019,1205,823,817,6,420,245,175,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_007,2024,1257,795,786,9,433,254,179,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_008,2014,1063,648,641,7,300,175,125,Party_Delta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_008,2019,1098,680,677,3,375,242,133,Party_Delta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_008,2024,1164,714,705,9,405,302,103,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_009,2014,1027,598,592,6,261,195,66,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_009,2019,1070,664,656,8,346,252,94,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_009,2024,1121,715,711,4,311,225,86,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_010,2014,918,577,570,7,339,215,124,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_010,2019,962,642,638,4,361,265,96,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_010,2024,993,621,615,6,361,289,72,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_011,2014,1231,814,805,9,473,327,146,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_011,2019,1257,824,813,11,405,272,133,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_011,2024,1293,704,700,4,348,233,115,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_012,2014,1015,642,636,6,343,258,85,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_012,2019,1062,619,611,8,266,150,116,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_012,2024,1102,660,656,4,306,202,104,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_013,2014,926,595,590,5,340,199,141,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_013,2019,950,599,593,6,292,189,103,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_013,2024,998,689,684,5,406,326,80,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_014,2014,852,556,550,6,330,271,59,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_014,2019,881,578,571,7,309,182,127,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_014,2024,915,496,493,3,210,133,77,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_015,2014,1025,682,672,10,339,273,66,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_015,2019,1061,580,574,6,280,180,100,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_West,Nagpur_West_PS_015,2024,1099,608,604,4,319,188,131,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_001,2014,1007,670,663,7,408,242,166,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_001,2019,1034,651,645,6,349,228,121,Party_Delta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_001,2024,1071,695,688,7,320,214,106,Party_Delta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_002,2014,1220,796,788,8,403,280,123,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_002,2019,1266,767,759,8,328,230,98,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_002,2024,1339,799,788,11,409,266,143,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_003,2014,1347,889,885,4,488,292,196,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_003,2019,1387,801,794,7,456,254,202,Party_Delta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_003,2024,1434,839,832,7,411,281,130,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_004,2014,1219,809,798,11,418,266,152,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_004,2019,1293,863,856,7,450,269,181,Party_Delta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_004,2024,1334,755,747,8,447,268,179,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_005,2014,1014,692,685,7,348,255,93,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_005,2019,1055,718,709,9,434,293,141,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_005,2024,1092,763,752,11,335,253,82,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_006,2014,1162,632,624,8,309,260,49,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_006,2019,1199,783,777,6,454,312,142,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_006,2024,1256,855,847,8,374,215,159,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_007,2014,1337,882,872,10,427,343,84,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_007,2019,1376,928,922,6,523,304,219,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_007,2024,1457,1017,1012,5,493,400,93,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_008,2014,934,536,534,2,294,244,50,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_008,2019,985,636,632,4,350,251,99,Party_Delta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_008,2024,1022,627,619,8,307,258,49,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_009,2014,1226,716,707,9,425,330,95,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_009,2019,1273,691,681,10,327,261,66,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_009,2024,1324,735,730,5,375,240,135,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_010,2014,1149,757,753,4,444,333,111,Party_Delta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_010,2019,1189,696,690,6,398,287,111,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_010,2024,1224,673,665,8,294,170,124,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_011,2014,1118,766,759,7,370,222,148,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_011,2019,1170,745,737,8,413,256,157,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_011,2024,1219,847,841,6,432,365,67,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_012,2014,1055,720,717,3,387,308,79,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_012,2019,1091,697,691,6,355,258,97,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_012,2024,1123,607,604,3,258,150,108,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_013,2014,1126,679,676,3,394,250,144,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_013,2019,1182,659,654,5,389,271,118,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_013,2024,1230,847,842,5,476,388,88,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_014,2014,903,575,571,4,348,277,71,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_014,2019,950,519,512,7,283,223,60,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_014,2024,984,589,586,3,334,190,144,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_015,2014,841,545,541,4,228,169,59,Party_Alpha
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_015,2019,876,595,588,7,353,201,152,Party_Beta
+Maharashtra,Nagpur_PC,Nagpur_Central,Nagpur_Central_PS_015,2024,909,556,553,3,332,263,69,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_001,2014,992,683,680,3,401,269,132,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_001,2019,1009,690,684,6,399,322,77,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_001,2024,1047,652,647,5,319,233,86,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_002,2014,986,566,559,7,252,140,112,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_002,2019,1018,625,622,3,359,262,97,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_002,2024,1068,740,733,7,323,194,129,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_003,2014,1085,777,769,8,338,207,131,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_003,2019,1102,664,660,4,294,235,59,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_003,2024,1148,817,811,6,438,349,89,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_004,2014,769,426,420,6,258,179,79,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_004,2019,809,519,513,6,260,166,94,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_004,2024,832,529,523,6,306,218,88,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_005,2014,983,707,703,4,324,254,70,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_005,2019,1008,622,619,3,327,202,125,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_005,2024,1061,690,683,7,349,196,153,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_006,2014,1188,709,700,9,314,216,98,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_006,2019,1230,696,688,8,330,230,100,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_006,2024,1263,824,813,11,459,375,84,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_007,2014,1080,681,671,10,282,209,73,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_007,2019,1097,609,601,8,340,265,75,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_007,2024,1141,760,751,9,335,214,121,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_008,2014,1255,753,750,3,440,339,101,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_008,2019,1300,716,706,10,410,334,76,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_008,2024,1338,846,842,4,422,240,182,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_009,2014,888,575,569,6,250,196,54,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_009,2019,921,529,523,6,241,195,46,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_009,2024,946,567,564,3,239,173,66,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_010,2014,1007,559,556,3,317,192,125,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_010,2019,1062,674,668,6,364,208,156,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_010,2024,1081,637,632,5,336,197,139,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_011,2014,1186,797,790,7,471,375,96,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_011,2019,1210,722,714,8,419,231,188,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_011,2024,1263,853,847,6,416,263,153,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_012,2014,1134,805,798,7,484,364,120,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_012,2019,1173,782,775,7,423,322,101,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_012,2024,1213,847,842,5,375,282,93,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_013,2014,1226,773,765,8,337,235,102,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_013,2019,1280,728,720,8,302,244,58,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_013,2024,1341,832,821,11,379,283,96,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_014,2014,805,483,480,3,272,175,97,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_014,2019,841,519,513,6,306,195,111,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_014,2024,851,588,585,3,285,158,127,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_015,2014,837,464,459,5,275,173,102,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_015,2019,874,557,551,6,316,244,72,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_North,Varanasi_North_PS_015,2024,903,628,622,6,308,203,105,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_001,2014,820,498,492,6,269,194,75,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_001,2019,861,570,565,5,313,223,90,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_001,2024,904,567,562,5,243,150,93,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_002,2014,908,614,609,5,372,310,62,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_002,2019,955,629,623,6,287,216,71,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_002,2024,979,642,634,8,284,226,58,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_003,2014,1201,770,766,4,427,354,73,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_003,2019,1229,724,721,3,346,269,77,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_003,2024,1291,877,868,9,444,319,125,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_004,2014,793,501,494,7,221,157,64,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_004,2019,820,584,580,4,358,274,84,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_004,2024,859,555,551,4,296,169,127,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_005,2014,1093,769,758,11,397,335,62,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_005,2019,1127,650,644,6,302,224,78,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_005,2024,1181,770,760,10,376,269,107,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_006,2014,871,526,519,7,227,154,73,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_006,2019,903,575,570,5,249,139,110,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_006,2024,942,644,640,4,314,235,79,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_007,2014,752,535,532,3,247,168,79,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_007,2019,791,510,506,4,297,176,121,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_007,2024,826,569,562,7,259,162,97,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_008,2014,807,561,558,3,242,191,51,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_008,2019,837,577,574,3,329,216,113,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_008,2024,875,503,497,6,236,160,76,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_009,2014,1214,678,669,9,321,206,115,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_009,2019,1231,861,857,4,413,317,96,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_009,2024,1311,815,809,6,455,361,94,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_010,2014,1085,658,649,9,301,233,68,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_010,2019,1139,641,635,6,287,225,62,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_010,2024,1175,699,692,7,340,284,56,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_011,2014,805,466,460,6,207,125,82,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_011,2019,839,527,520,7,294,237,57,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_011,2024,861,524,520,4,307,233,74,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_012,2014,811,576,571,5,258,203,55,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_012,2019,841,550,543,7,288,202,86,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_012,2024,870,559,551,8,287,219,68,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_013,2014,1225,814,805,9,469,328,141,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_013,2019,1275,769,758,11,467,344,123,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_013,2024,1312,800,792,8,448,301,147,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_014,2014,725,433,429,4,208,118,90,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_014,2019,762,520,514,6,296,232,64,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_014,2024,790,471,468,3,288,164,124,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_015,2014,899,607,600,7,293,196,97,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_015,2019,930,543,538,5,256,191,65,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_South,Varanasi_South_PS_015,2024,975,564,556,8,281,213,68,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_001,2014,1171,773,768,5,470,294,176,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_001,2019,1247,809,801,8,336,202,134,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_001,2024,1271,796,788,8,478,264,214,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_002,2014,1105,610,604,6,308,257,51,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_002,2019,1172,789,781,8,361,270,91,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_002,2024,1194,808,797,11,375,255,120,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_003,2014,945,556,551,5,308,188,120,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_003,2019,987,666,663,3,306,193,113,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_003,2024,1020,718,712,6,329,240,89,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_004,2014,1024,717,711,6,338,266,72,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_004,2019,1069,700,692,8,362,206,156,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_004,2024,1115,777,767,10,327,257,70,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_005,2014,1153,805,796,9,413,294,119,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_005,2019,1186,753,744,9,342,248,94,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_005,2024,1248,698,692,6,305,237,68,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_006,2014,815,470,468,2,258,197,61,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_006,2019,849,565,562,3,270,169,101,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_006,2024,874,591,588,3,344,211,133,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_007,2014,1091,660,655,5,398,323,75,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_007,2019,1140,724,719,5,399,320,79,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_007,2024,1156,722,714,8,396,239,157,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_008,2014,1067,616,613,3,347,244,103,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_008,2019,1111,713,707,6,400,326,74,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_008,2024,1166,664,660,4,299,186,113,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_009,2014,828,486,479,7,254,171,83,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_009,2019,852,528,522,6,253,180,73,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_009,2024,887,583,577,6,312,182,130,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_010,2014,997,583,578,5,266,187,79,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_010,2019,1027,700,693,7,384,258,126,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_010,2024,1085,643,640,3,337,270,67,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_011,2014,1207,689,684,5,357,284,73,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_011,2019,1245,700,694,6,416,254,162,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_011,2024,1303,910,902,8,553,315,238,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_012,2014,746,512,508,4,270,174,96,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_012,2019,773,471,467,4,230,158,72,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_012,2024,811,512,510,2,293,209,84,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_013,2014,827,514,509,5,249,171,78,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_013,2019,863,571,567,4,256,160,96,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_013,2024,911,568,561,7,296,230,66,Party_Beta
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_014,2014,1134,662,657,5,304,206,98,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_014,2019,1198,762,757,5,423,281,142,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_014,2024,1245,742,734,8,446,330,116,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_015,2014,859,540,536,4,313,178,135,Party_Gamma
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_015,2019,892,605,601,4,336,222,114,Party_Alpha
+Uttar Pradesh,Varanasi_PC,Varanasi_Cantt,Varanasi_Cantt_PS_015,2024,927,544,539,5,271,221,50,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_001,2014,971,543,540,3,306,208,98,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_001,2019,1011,625,621,4,269,155,114,Party_Gamma
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_001,2024,1051,526,521,5,250,161,89,Party_Gamma
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_002,2014,1318,725,716,9,345,257,88,Party_Gamma
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_002,2019,1362,739,735,4,309,257,52,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_002,2024,1417,785,781,4,442,333,109,Party_Gamma
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_003,2014,1134,627,622,5,339,234,105,Party_Gamma
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_003,2019,1171,746,738,8,415,302,113,Party_Gamma
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_003,2024,1232,732,726,6,329,230,99,Party_Beta
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_004,2014,1414,845,836,9,377,279,98,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_004,2019,1461,739,732,7,446,253,193,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_004,2024,1529,931,921,10,541,428,113,Party_Gamma
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_005,2014,984,513,508,5,306,222,84,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_005,2019,1042,607,600,7,279,210,69,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_005,2024,1088,576,569,7,261,201,60,Party_Beta
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_006,2014,1034,521,514,7,315,217,98,Party_Gamma
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_006,2019,1062,589,583,6,280,200,80,Party_Beta
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_006,2024,1094,610,606,4,261,215,46,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_007,2014,1426,909,903,6,380,227,153,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_007,2019,1440,785,779,6,347,217,130,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_007,2024,1510,961,955,6,549,314,235,Party_Beta
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_008,2014,872,472,467,5,208,151,57,Party_Gamma
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_008,2019,907,453,450,3,228,157,71,Party_Beta
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_008,2024,942,565,561,4,257,168,89,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_009,2014,1221,741,731,10,383,265,118,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_009,2019,1258,727,719,8,318,251,67,Party_Gamma
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_009,2024,1312,796,792,4,483,291,192,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_010,2014,1101,649,645,4,318,238,80,Party_Gamma
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_010,2019,1152,620,616,4,360,229,131,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_010,2024,1211,769,761,8,376,297,79,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_011,2014,933,570,567,3,263,161,102,Party_Gamma
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_011,2019,963,582,576,6,248,164,84,Party_Gamma
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_011,2024,1001,528,524,4,319,266,53,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_012,2014,1148,612,604,8,310,241,69,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_012,2019,1223,699,691,8,342,260,82,Party_Beta
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_012,2024,1262,750,741,9,407,251,156,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_013,2014,1062,549,543,6,320,265,55,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_013,2019,1090,666,658,8,320,221,99,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_013,2024,1141,602,599,3,329,202,127,Party_Gamma
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_014,2014,1271,800,794,6,452,307,145,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_014,2019,1299,654,645,9,391,246,145,Party_Gamma
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_014,2024,1344,794,789,5,429,313,116,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_015,2014,1142,679,672,7,340,268,72,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_015,2019,1175,660,655,5,384,319,65,Party_Alpha
+Karnataka,Bangalore_South_PC,Jayanagar,Jayanagar_PS_015,2024,1235,658,651,7,317,217,100,Party_Alpha
+Karnataka,Bangalore_South_PC,Padmanabhanagar,Padmanabhanagar_PS_001,2014,1423,760,753,7,429,333,96,Party_Gamma
+Karnataka,Bangalore_South_PC,Padmanabhanagar,Padmanabhanagar_PS_001,2019,1478,762,752,10,385,311,74,Party_Gamma
+Karnataka,Bangalore_South_PC,Padmanabhanagar,Padmanabhanagar_PS_001,2024,1532,854,847,7,507,417,90,Party_Beta
+Karnataka,Bangalore_South_PC,Padmanabhanagar,Padmanabhanagar_PS_002,2014,1030,620,612,8,362,286,76,Party_Gamma
+Karnataka,Bangalore_South_PC,Padmanabhanagar,Padmanabhanagar_PS_002,2019,1065,604,601,3,366,216,150,Party_Gamma

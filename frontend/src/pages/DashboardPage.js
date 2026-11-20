@@ -1,11 +1,57 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Database, AlertCircle, CheckSquare, ShieldCheck, Activity, Layers, ArrowUpRight } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import StatusBadge from '../components/StatusBadge';
 import { Link } from 'react-router-dom';
+import { datasetService } from '../services/datasetService';
+import { anomalyService } from '../services/anomalyService';
 
 const DashboardPage = () => {
   const { user } = useAuth();
+  const [stats, setStats] = useState({
+    datasets: 0,
+    anomalies: 0,
+    loading: true,
+  });
+
+  useEffect(() => {
+    let isMounted = true;
+    const fetchCounts = async () => {
+      try {
+        const [datasetRes, anomalyRes] = await Promise.allSettled([
+          datasetService.getDatasets({ limit: 1 }),
+          anomalyService.getAnomalies({ limit: 1 }),
+        ]);
+
+        const datasetCount =
+          datasetRes.status === 'fulfilled' && datasetRes.value?.data?.pagination?.total !== undefined
+            ? datasetRes.value.data.pagination.total
+            : 0;
+
+        const anomalyCount =
+          anomalyRes.status === 'fulfilled' && anomalyRes.value?.data?.pagination?.total !== undefined
+            ? anomalyRes.value.data.pagination.total
+            : 0;
+
+        if (isMounted) {
+          setStats({
+            datasets: datasetCount,
+            anomalies: anomalyCount,
+            loading: false,
+          });
+        }
+      } catch (err) {
+        if (isMounted) {
+          setStats((prev) => ({ ...prev, loading: false }));
+        }
+      }
+    };
+
+    fetchCounts();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   return (
     <div className="space-y-6 max-w-7xl mx-auto">
@@ -50,8 +96,12 @@ const DashboardPage = () => {
             </div>
           </div>
           <div className="mt-3">
-            <div className="text-2xl font-bold text-slate-900 dark:text-white">0</div>
-            <p className="text-[11px] text-slate-400 mt-1">Ready for Phase 2 ingestion</p>
+            <div className="text-2xl font-bold text-slate-900 dark:text-white">
+              {stats.loading ? '...' : stats.datasets}
+            </div>
+            <p className="text-[11px] text-slate-400 mt-1">
+              {stats.datasets === 0 ? 'Ready for dataset ingestion' : `${stats.datasets} dataset${stats.datasets === 1 ? '' : 's'} registered`}
+            </p>
           </div>
         </div>
 
@@ -65,8 +115,12 @@ const DashboardPage = () => {
             </div>
           </div>
           <div className="mt-3">
-            <div className="text-2xl font-bold text-slate-900 dark:text-white">0</div>
-            <p className="text-[11px] text-slate-400 mt-1">Awaiting Phase 4 detection</p>
+            <div className="text-2xl font-bold text-slate-900 dark:text-white">
+              {stats.loading ? '...' : stats.anomalies}
+            </div>
+            <p className="text-[11px] text-slate-400 mt-1">
+              {stats.anomalies === 0 ? 'Awaiting detection run' : `${stats.anomalies} anomalies detected`}
+            </p>
           </div>
         </div>
 

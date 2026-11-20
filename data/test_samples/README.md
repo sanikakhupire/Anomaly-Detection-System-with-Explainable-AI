@@ -48,6 +48,24 @@ This platform is designed for **hierarchical, multi-dimensional public administr
 
 ---
 
+### C. Electoral & Voting Forensic Domain: Election Dataset (500 Records)
+
+| File Name | Purpose | Description |
+| :--- | :--- | :--- |
+| **`election_accurate_baseline.csv`** | **Accurate Baseline (Control)** | 100% nominal, consistent electoral records adhering to constitutional turnout norms, positive victory margins, valid arithmetic (`valid_votes + rejected_votes = votes_polled`), and natural Benford digit distributions. Zero anomalies. |
+| **`election_anomaly_test.csv`** | **Anomaly Test Set (Experiment)** | Identical 500-record structure with **40 calibrated anomalies (8.0% anomaly rate)** injected across 6 electoral anomaly categories. |
+| **`election_comparison_report.json`** | **Ground-Truth Comparison Diff** | Exact row-by-row mapping of every modified polling station record, including baseline value, injected value, anomaly category, and expected detector. |
+
+#### Injected Anomaly Categories in `election_anomaly_test.csv`:
+1. **Ballot Stuffing / Impossible Turnout:** Turnout exceeding 100% of registered electors (e.g. 110% to 128%). *Detected by Domain Rule Agent (C5) / Isolation Forest.*
+2. **Vote Arithmetic Contradictions:** `valid_votes + rejected_votes != votes_polled`. *Detected by Claim Verifier / Domain Agent (C5).*
+3. **Bivariate Ballot Capture (Spike Clusters):** Bivariate footprint of 98.5% turnout with 96% vote share for one candidate. *Detected by Election Bivariate Forensics (C3) & Robust Z-Score.*
+4. **Digit Manipulation & Heaping:** Manufactured round numbers ending in artificial trailing zeroes (`00`). *Detected by Benford's Law & Whipple/Myers Digit Heaping (C3).*
+5. **Margin Inversion / Logic Conflicts:** Declared winner receiving fewer votes than runner-up, yielding a negative victory margin. *Detected by Multi-Agent Domain Rule Agent.*
+6. **Contextual Peer-Group Outliers:** Polling stations with sudden 16% turnout in a 65% median assembly constituency cohort. *Detected by Hierarchy-Aware Peer Groups (C2) & Conformal ACAT (C1).*
+
+---
+
 ## 3. How to Test Them in the Platform
 
 1. **Start the Platform:**
